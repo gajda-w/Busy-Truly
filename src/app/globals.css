@@ -1,0 +1,164 @@
+:root {
+  --ink: #0b100e;
+  --ivory: #f0ebdd;
+  --forest: #14251d;
+  --midnight: #071426;
+  --gold: #b5a06a;
+  color-scheme: dark;
+  background: var(--ink);
+  color: var(--ivory);
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: var(--font-body), sans-serif; font-size: 20px; line-height: 1.65; font-weight: 400; -webkit-font-smoothing: antialiased; }
+h1, h2, p, ul { margin: 0; }
+h1, h2 { font-family: var(--font-display), serif; font-weight: 400; }
+h1 { font-size: 68px; line-height: 1.15; }
+h2 { font-size: 46px; line-height: 1.2; }
+a { color: inherit; text-decoration: none; transition: color .2s ease, background-color .2s ease, border-color .2s ease; }
+a:hover { color: var(--gold); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 6px; }
+button { font: inherit; color: inherit; }
+svg { flex-shrink: 0; display: block; }
+main { display: flex; flex-direction: column; align-items: center; }
+section { position: relative; width: 100%; overflow: clip; }
+.gold { color: var(--gold); }
+.label { font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 2px; color: var(--gold); }
+.masthead, .footer { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+.masthead { padding: 26px 56px; box-shadow: inset 0 -1px var(--gold); }
+.brand { font-family: var(--font-brand), serif; font-size: 28px; font-weight: 600; line-height: 1.2; letter-spacing: 3px; }
+.footer { padding: 32px 56px; box-shadow: inset 0 1px var(--gold); }
+.pill { display: inline-flex; align-items: flex-start; justify-content: flex-start; flex-shrink: 0; align-self: flex-start; width: max-content; max-width: 100%; padding: 12px 28px; border: 0; box-shadow: inset 0 0 0 1px var(--gold); border-radius: 100px; background: rgba(181, 160, 106, .08); line-height: 1.65; text-align: start; }
+a.pill:hover { background: rgba(181, 160, 106, .16); }
+.pill:disabled { cursor: default; opacity: 1; }
+.pill-outline { background: transparent; padding: 12px 24px; }
+.opening { min-height: 880px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 36px; padding: 128px 96px; text-align: center; background: radial-gradient(50% 50% at 50% 0%, #092d45 0%, #071426 48%, #0b100e 100%); }
+.opening-orbit { color: var(--gold); opacity: .8; }
+.opening h1 { width: 100%; max-width: 880px; text-wrap: balance; }
+.opening > .label { width: 100%; }
+.opening-description { width: 100%; max-width: 640px; text-wrap: pretty; }
+.opening-actions { display: flex; gap: 24px; padding: 12px 0; }
+.constellation, .distant-star { position: absolute; pointer-events: none; }
+.constellation-left { left: 100px; top: 200px; color: var(--gold); opacity: .45; }
+.constellation-right { right: 100px; bottom: 180px; opacity: .35; }
+.celestial-arc { position: absolute; pointer-events: none; left: 160px; top: -450px; width: 880px; height: 880px; border-radius: 50%; border: 1px solid rgba(181, 160, 106, .16); }
+.opening-star-one { left: 240px; top: 90px; width: 9px; height: 9px; opacity: .3; }
+.opening-star-two { right: 220px; top: 160px; width: 12px; height: 12px; opacity: .4; }
+.opening-star-three { left: 80px; top: 360px; width: 7px; height: 7px; opacity: .25; }
+.books-section { max-width: 1200px; display: flex; flex-direction: column; align-items: center; gap: 40px; padding: 128px 72px; background: linear-gradient(180deg, #0b100e 0%, #0b100e 72%, #14251d 100%); }
+.books-section > .label, .books-section > h2 { width: 100%; text-align: center; }
+.books-section > h2 { text-wrap: balance; }
+.books-grid, .threads-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px; width: 100%; }
+.book { display: flex; flex-direction: column; align-items: center; gap: 28px; padding: 56px 40px; overflow: clip; }
+.book > p, .book > h2 { width: 100%; }
+.book .book-status { text-align: center; }
+.book > .pill { align-self: center; }
+.gold-frame {
+  position: relative;
+  isolation: isolate;
+  flex-shrink: 0;
+  width: 298px;
+  max-width: 100%;
+  padding: 8px;
+  border: 1px solid rgb(181 160 106 / 55%);
+  background: linear-gradient(135deg, rgb(181 160 106 / 6%), rgb(181 160 106 / 1%) 55%, rgb(181 160 106 / 4%));
+  box-shadow: 0 8px 24px rgb(0 0 0 / 16%);
+}
+.gold-frame::after { content: ""; position: absolute; inset: 4px; border: 1px solid rgb(181 160 106 / 28%); pointer-events: none; }
+.frame-ornaments { position: absolute; inset: 0; z-index: 1; color: var(--gold); opacity: .75; pointer-events: none; }
+.frame-corner { position: absolute; width: 38px; height: 38px; stroke-width: .85; }
+.frame-corner-top-left { top: -3px; left: -3px; }
+.frame-corner-top-right { top: -3px; right: -3px; transform: rotate(90deg); }
+.frame-corner-bottom-left { bottom: -3px; left: -3px; transform: rotate(-90deg); }
+.frame-corner-bottom-right { bottom: -3px; right: -3px; transform: rotate(180deg); }
+.frame-crest { position: absolute; left: 50%; width: 56px; height: 17px; transform: translateX(-50%); }
+.frame-crest-top { top: -6px; }
+.frame-crest-bottom { bottom: -6px; transform: translateX(-50%) rotate(180deg); }
+.book-cover { position: relative; width: 100%; aspect-ratio: 280 / 448; }
+.cover-image { object-fit: cover; }
+.wrap-cover { overflow: clip; }
+.wrap-image { position: absolute; left: -191.785714%; top: -6.919643%; width: 367.5%; height: 113.392857%; max-width: none; }
+.threads-section { max-width: 1200px; display: flex; flex-direction: column; align-items: flex-start; gap: 32px; padding: 112px 120px; background: var(--forest); }
+.threads-description { max-width: 720px; }
+.thread { display: flex; flex-direction: column; align-items: flex-start; gap: 28px; }
+.thread h2, .thread ul, .thread .label { width: 100%; }
+.thread ul { padding: 0 0 0 20px; }
+.thread li { padding-left: 0; }
+.author-section { max-width: 1200px; display: flex; align-items: center; gap: 80px; padding: 112px 96px; background: linear-gradient(180deg, #14251d 0%, #071426 100%); }
+.author-frame { flex: 0 0 298px; }
+.author-portrait { position: relative; width: 100%; aspect-ratio: 280 / 390; }
+.author-portrait img { object-fit: cover; }
+.author-invitation { display: flex; flex: 1; flex-direction: column; align-items: flex-start; gap: 28px; min-width: 0; }
+.author-invitation h2 { text-wrap: balance; }
+.author-invitation > p:not(.label) { text-wrap: pretty; }
+.instagram-pill { gap: 12px; align-items: center; background: transparent; box-shadow: inset 0 0 0 1px rgba(181, 160, 106, .35); padding: 12px 20px; }
+.author-star-one { right: 48px; bottom: 160px; width: 10px; height: 10px; opacity: .3; }
+.author-star-two { left: 420px; bottom: 60px; width: 7px; height: 7px; opacity: .25; }
+.fragments-section { max-width: 1200px; display: flex; flex-direction: column; align-items: center; gap: 32px; padding: 120px; text-align: center; background: linear-gradient(180deg, #071426 0%, #0b100e 100%); }
+.fragments-section h2 { width: 100%; max-width: 760px; text-wrap: balance; }
+.fragments-star-one { left: 90px; top: 70px; width: 10px; height: 10px; opacity: .3; }
+.fragments-star-two { right: 160px; top: 120px; width: 7px; height: 7px; opacity: .3; }
+.fragments-star-three { right: 70px; top: 260px; width: 12px; height: 12px; opacity: .25; }
+.final-section { max-width: 1200px; display: flex; flex-direction: column; align-items: center; gap: 28px; padding: 112px 120px; text-align: center; background: linear-gradient(180deg, #0b100e 0%, #241214 35%, #301417 55%, #1c1112 78%, #0b100e 100%); }
+.final-section h2 { max-width: 760px; text-wrap: balance; }
+.final-description { max-width: 680px; text-wrap: pretty; }
+.final-section .pill { align-self: center; }
+.skip-link { position: fixed; left: 16px; top: -100px; z-index: 10; padding: 8px 16px; background: var(--ink); border: 1px solid var(--gold); }
+.skip-link:focus { top: 16px; }
+
+@media (min-width: 1201px) {
+  .celestial-arc { left: calc(50% - 440px); }
+}
+
+@media (max-width: 1000px) {
+  .masthead, .footer { padding-left: 32px; padding-right: 32px; }
+  .opening { padding-left: 48px; padding-right: 48px; }
+  .books-section { padding-left: 32px; padding-right: 32px; }
+  .books-grid { gap: 24px; }
+  .book { padding-left: 20px; padding-right: 20px; }
+  .threads-section { padding-left: 48px; padding-right: 48px; }
+  .author-section { padding-left: 48px; padding-right: 48px; gap: 40px; }
+  .fragments-section, .final-section { padding-left: 48px; padding-right: 48px; }
+}
+
+@media (max-width: 760px) {
+  body { font-size: 18px; }
+  h1 { font-size: clamp(38px, 8vw, 54px); }
+  h2 { font-size: 36px; }
+  .label { font-size: 12px; letter-spacing: 1.6px; }
+  .masthead { padding: 22px 24px; gap: 18px; }
+  .masthead > a:not(.brand) { font-size: 16px; }
+  .brand { font-size: 23px; letter-spacing: 2px; white-space: nowrap; }
+  .opening { min-height: 780px; padding: 96px 24px; gap: 30px; }
+  .opening-orbit { width: 48px; height: 48px; }
+  .opening h1 { max-width: 540px; }
+  .celestial-arc { width: 680px; height: 680px; left: calc(50% - 340px); top: -355px; }
+  .constellation-left { left: 24px; top: 160px; width: 26px; }
+  .constellation-right { right: 22px; bottom: 70px; width: 32px; }
+  .opening-star-one { left: 70px; top: 60px; }
+  .opening-star-two { right: 70px; top: 120px; }
+  .opening-star-three { left: 16px; top: 390px; }
+  .books-section { padding: 80px 24px; gap: 32px; }
+  .books-grid, .threads-grid { grid-template-columns: minmax(0, 1fr); gap: 64px; }
+  .book { padding: 24px 0; max-width: 460px; margin: 0 auto; gap: 24px; }
+  .book-cover { max-width: 100%; }
+  .threads-section { padding: 80px 24px; gap: 28px; }
+  .thread { gap: 24px; }
+  .author-section { padding: 80px 24px; flex-direction: column; gap: 48px; }
+  .author-frame { flex-basis: auto; }
+  .author-invitation { width: 100%; max-width: 560px; gap: 24px; }
+  .instagram-pill { font-size: 16px; gap: 10px; padding: 12px 16px; }
+  .fragments-section { padding: 88px 24px; gap: 28px; }
+  .fragments-star-one { left: 24px; top: 45px; }
+  .fragments-star-two { right: 40px; top: 80px; }
+  .fragments-star-three { right: 16px; top: 250px; }
+  .final-section { padding: 88px 24px; gap: 28px; }
+  .footer { padding: 28px 24px; flex-direction: column; align-items: flex-start; gap: 12px; font-size: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  a { transition: none; }
+}

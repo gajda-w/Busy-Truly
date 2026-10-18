@@ -1,0 +1,14 @@
+{
+  "referenceSize": [
+    1200,
+    5146
+  ],
+  "implementationSize": [
+    1200,
+    5145
+  ],
+  "ssimGrayscale7x7": 0.9681196858325077,
+  "meanAbsoluteRGBError": 0.014170264867185377,
+  "pixelSimilarity1MinusMAE": 0.9858297351328146,
+  "notes": "Full-page images, same 1200px width; no alignment or rescaling. One-pixel height gap padded with page background. SSIM is an image metric, not a claim of functional equivalence."
+}

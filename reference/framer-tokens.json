@@ -1,0 +1,177 @@
+[
+  {
+    "type": "TextStylePresetNode",
+    "name": "Display",
+    "id": "zEL29Z40n",
+    "attributes": {
+      "fontName": "EB Garamond",
+      "fontStyle": "normal",
+      "fontWeight": 400,
+      "openTypeFontFeatures": {
+        "blwf": "on",
+        "cv03": "on",
+        "cv04": "on",
+        "cv09": "on",
+        "cv11": "on"
+      },
+      "textAlignment": "start",
+      "textColor": "var(--token-99ec70cb-bbce-4078-adb5-c3414d108309)",
+      "breakpoint": {
+        "default": {
+          "minWidth": "0px",
+          "fontSize": "68px",
+          "letterSpacing": "0px",
+          "lineHeight": "1.15em",
+          "paragraphSpacing": "0px"
+        }
+      },
+      "tag": "h1"
+    }
+  },
+  {
+    "type": "TextStylePresetNode",
+    "name": "Section Heading",
+    "id": "B5IIbumjX",
+    "attributes": {
+      "paragraphSpacing": 40,
+      "fontName": "EB Garamond",
+      "fontStyle": "normal",
+      "fontWeight": 400,
+      "openTypeFontFeatures": {
+        "blwf": "on",
+        "cv03": "on",
+        "cv04": "on",
+        "cv09": "on",
+        "cv11": "on"
+      },
+      "textAlignment": "start",
+      "textColor": "var(--token-99ec70cb-bbce-4078-adb5-c3414d108309)",
+      "breakpoint": {
+        "default": {
+          "minWidth": "0px",
+          "fontSize": "46px",
+          "letterSpacing": "0px",
+          "lineHeight": "1.2em",
+          "paragraphSpacing": "40px"
+        }
+      },
+      "tag": "h2"
+    }
+  },
+  {
+    "type": "TextStylePresetNode",
+    "name": "Body",
+    "id": "sg2qhZ0Q0",
+    "attributes": {
+      "paragraphSpacing": 20,
+      "fontName": "Alegreya Sans",
+      "fontStyle": "normal",
+      "fontWeight": 400,
+      "openTypeFontFeatures": {
+        "blwf": "on",
+        "cv03": "on",
+        "cv04": "on",
+        "cv09": "on",
+        "cv11": "on"
+      },
+      "textAlignment": "start",
+      "textColor": "var(--token-99ec70cb-bbce-4078-adb5-c3414d108309)",
+      "breakpoint": {
+        "default": {
+          "minWidth": "0px",
+          "fontSize": "20px",
+          "letterSpacing": "0px",
+          "lineHeight": "1.65em",
+          "paragraphSpacing": "20px"
+        }
+      }
+    }
+  },
+  {
+    "type": "TextStylePresetNode",
+    "name": "Label",
+    "id": "KRFooDz3F",
+    "attributes": {
+      "paragraphSpacing": 20,
+      "fontName": "Alegreya Sans",
+      "fontStyle": "normal",
+      "fontWeight": 500,
+      "openTypeFontFeatures": {
+        "blwf": "on",
+        "cv03": "on",
+        "cv04": "on",
+        "cv09": "on",
+        "cv11": "on"
+      },
+      "textAlignment": "start",
+      "textColor": "var(--token-1eda330a-cca5-49e0-b032-a5a8a982ab65)",
+      "breakpoint": {
+        "default": {
+          "minWidth": "0px",
+          "fontSize": "14px",
+          "letterSpacing": "2px",
+          "lineHeight": "1.5em",
+          "paragraphSpacing": "20px"
+        }
+      }
+    }
+  },
+  {
+    "type": "ColorStyleTokenNode",
+    "id": "67858b6a-1add-4fa3-9233-4ab618c4ab80",
+    "name": "Ink",
+    "light": "rgb(11, 16, 14)",
+    "attributes": {
+      "light": "rgb(11, 16, 14)"
+    }
+  },
+  {
+    "type": "ColorStyleTokenNode",
+    "id": "99ec70cb-bbce-4078-adb5-c3414d108309",
+    "name": "Ivory",
+    "light": "rgb(240, 235, 221)",
+    "attributes": {
+      "light": "rgb(240, 235, 221)"
+    }
+  },
+  {
+    "type": "ColorStyleTokenNode",
+    "id": "27cd4ac4-d3cc-48f8-b4e4-7f6d14cadbe0",
+    "name": "Forest",
+    "light": "rgb(20, 37, 29)",
+    "attributes": {
+      "light": "rgb(20, 37, 29)"
+    }
+  },
+  {
+    "type": "ColorStyleTokenNode",
+    "id": "b4b1b106-b107-4db9-a654-a98af5f57c8d",
+    "name": "Midnight",
+    "light": "rgb(7, 20, 38)",
+    "attributes": {
+      "light": "rgb(7, 20, 38)"
+    }
+  },
+  {
+    "type": "ColorStyleTokenNode",
+    "id": "1eda330a-cca5-49e0-b032-a5a8a982ab65",
+    "name": "Antique Gold",
+    "light": "rgb(181, 160, 106)",
+    "attributes": {
+      "light": "rgb(181, 160, 106)"
+    }
+  },
+  {
+    "type": "LinkStylePresetNode",
+    "name": "Editorial Link",
+    "id": "VrsEbXWaN",
+    "attributes": {
+      "link": {
+        "textColor": "var(--token-99ec70cb-bbce-4078-adb5-c3414d108309)",
+        "hover": {
+          "textColor": "var(--token-1eda330a-cca5-49e0-b032-a5a8a982ab65)"
+        }
+      }
+    }
+  }
+]

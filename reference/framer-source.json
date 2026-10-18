@@ -1,0 +1,2942 @@
+{
+  "page": {
+    "type": "WebPageNode",
+    "id": "augiA20Il",
+    "name": "Home",
+    "variables": [],
+    "$parentId": "sn7IXw6X9",
+    "$layoutTemplateId": "WiuUnptEt",
+    "$layoutTemplateDisplayName": "Literary Layout",
+    "$breakpoints": [
+      {
+        "id": "WQLkyLRf1",
+        "name": "Desktop"
+      }
+    ],
+    "attributes": {
+      "layoutTemplate": "default",
+      "path": "/"
+    },
+    "children": [
+      {
+        "type": "FrameNode",
+        "name": "Desktop",
+        "id": "WQLkyLRf1",
+        "$isPrimary": true,
+        "$rect": {
+          "height": 5145
+        },
+        "attributes": {
+          "left": "0px",
+          "right": "null",
+          "top": "0px",
+          "bottom": "null",
+          "centerAnchorX": "0%",
+          "centerAnchorY": "0%",
+          "constraintsLocked": false,
+          "width": "1200px",
+          "height": "auto",
+          "transition": "spring-physics 500 60 1 0s"
+        },
+        "children": [
+          {
+            "type": "FrameNode",
+            "name": "Opening",
+            "id": "xE3mBe93u",
+            "$rect": {
+              "x": 0,
+              "y": 86,
+              "width": 1200,
+              "height": 880
+            },
+            "attributes": {
+              "fill": "radial-gradient(50% 50% at 50% 0%, #092D45 0%, #071426 48%, #0B100E 100%)",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "center",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "36px",
+              "overflow": "clip",
+              "padding": "128px 96px 128px 96px",
+              "position": "relative",
+              "width": "100%",
+              "height": "auto",
+              "minHeight": "880px"
+            },
+            "children": [
+              {
+                "type": "IconNode",
+                "id": "IvXPxBy6T",
+                "name": "Moon Motif",
+                "set": "Y7SpbVH16cWqMhj75z1M",
+                "$control__icon": "Orbit",
+                "$rect": {
+                  "x": 572,
+                  "y": 138,
+                  "height": 56
+                },
+                "attributes": {
+                  "$control__color": "var(--token-1eda330a-cca5-49e0-b032-a5a8a982ab65)",
+                  "$control__width": "1",
+                  "opacity": "0.8",
+                  "position": "relative",
+                  "width": "56px",
+                  "height": "auto"
+                }
+              },
+              {
+                "type": "RichTextNode",
+                "id": "FvJS6KHmU",
+                "$rect": {
+                  "x": 96,
+                  "y": 230,
+                  "width": 1008,
+                  "height": 21
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "textStylePreset": "Label",
+                  "textAlignment": "center"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:FvJS6KHmU:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:FvJS6KHmU:0:0",
+                        "attributes": {
+                          "text": "THE WORLDS OF K.T. WRITZ"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "RichTextNode",
+                "name": "Opening Headline",
+                "id": "n9quKUMv2",
+                "$rect": {
+                  "x": 160,
+                  "y": 287,
+                  "width": 880,
+                  "height": 235
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "maxWidth": "880px",
+                  "textStylePreset": "Display",
+                  "textAlignment": "center",
+                  "textWrap": "balance"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:n9quKUMv2:0",
+                    "attributes": {
+                      "tag": "h1"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:n9quKUMv2:0:0",
+                        "attributes": {
+                          "text": "Some worlds are not meant to be discovered. Others will never let you go."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "RichTextNode",
+                "id": "iUBSUH4l9",
+                "$rect": {
+                  "x": 280,
+                  "y": 558,
+                  "width": 640,
+                  "height": 66
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "maxWidth": "640px",
+                  "textStylePreset": "Body",
+                  "textAlignment": "center",
+                  "textWrap": "pretty"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:iUBSUH4l9:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:iUBSUH4l9:0:0",
+                        "attributes": {
+                          "text": "Enter the worlds of K.T. Writz, where ancient magic awakens, kingdoms collide, and the most dangerous secrets are the ones we carry within ourselves."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "FrameNode",
+                "name": "Opening Actions",
+                "id": "I1zYO7Mpx",
+                "$rect": {
+                  "x": 503,
+                  "y": 660,
+                  "width": 194,
+                  "height": 81
+                },
+                "attributes": {
+                  "layout": "stack",
+                  "stackDirection": "horizontal",
+                  "stackDistribution": "start",
+                  "stackAlignment": "start",
+                  "stackWrapEnabled": false,
+                  "gap": "24px",
+                  "padding": "12px 0px 12px 0px",
+                  "position": "relative",
+                  "width": "auto",
+                  "height": "auto"
+                },
+                "children": [
+                  {
+                    "type": "FrameNode",
+                    "name": "Explore the Books",
+                    "id": "bXKjYaJ3z",
+                    "$rect": {
+                      "x": 0,
+                      "y": 12,
+                      "width": 194,
+                      "height": 57
+                    },
+                    "attributes": {
+                      "border": "1px solid #B5A06A",
+                      "fill": "rgba(181,160,106,0.08)",
+                      "layout": "stack",
+                      "stackDirection": "horizontal",
+                      "stackDistribution": "start",
+                      "stackAlignment": "start",
+                      "stackWrapEnabled": false,
+                      "gap": "0px",
+                      "link": {
+                        "href": "/#books",
+                        "smoothScroll": true
+                      },
+                      "padding": "12px 28px 12px 28px",
+                      "position": "relative",
+                      "radius": "100px",
+                      "width": "auto",
+                      "height": "auto"
+                    },
+                    "children": [
+                      {
+                        "type": "RichTextNode",
+                        "id": "lLJgg_7TP",
+                        "$rect": {
+                          "x": 28,
+                          "y": 12,
+                          "width": 138,
+                          "height": 33
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "auto",
+                          "height": "auto",
+                          "textStylePreset": "Body",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:lLJgg_7TP:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:lLJgg_7TP:0:0",
+                                "attributes": {
+                                  "text": "Explore the Books"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "IconNode",
+                "id": "LkwxHCXg2",
+                "name": "Left Constellation",
+                "set": "Y7SpbVH16cWqMhj75z1M",
+                "$control__icon": "Sparkles",
+                "$rect": {
+                  "height": 36
+                },
+                "attributes": {
+                  "$control__color": "#B5A06A",
+                  "$control__width": "1",
+                  "opacity": "0.45",
+                  "position": "absolute",
+                  "left": "100px",
+                  "right": "null",
+                  "top": "200px",
+                  "bottom": "null",
+                  "centerAnchorX": "0%",
+                  "centerAnchorY": "0%",
+                  "constraintsLocked": false,
+                  "width": "36px",
+                  "height": "auto"
+                }
+              },
+              {
+                "type": "IconNode",
+                "id": "oMsYRo1r7",
+                "name": "Right Constellation",
+                "set": "Y7SpbVH16cWqMhj75z1M",
+                "$control__icon": "Sparkles",
+                "$rect": {
+                  "height": 48
+                },
+                "attributes": {
+                  "$control__color": "#F0EBDD",
+                  "$control__width": "1",
+                  "opacity": "0.35",
+                  "position": "absolute",
+                  "left": "null",
+                  "right": "100px",
+                  "top": "null",
+                  "bottom": "180px",
+                  "centerAnchorX": "0%",
+                  "centerAnchorY": "0%",
+                  "constraintsLocked": false,
+                  "width": "48px",
+                  "height": "auto"
+                }
+              },
+              {
+                "type": "FrameNode",
+                "name": "Celestial Arc",
+                "id": "deji5EzPZ",
+                "attributes": {
+                  "border": "1px solid rgba(181,160,106,0.16)",
+                  "layout": "null",
+                  "position": "absolute",
+                  "left": "160px",
+                  "right": "null",
+                  "top": "-450px",
+                  "bottom": "null",
+                  "centerAnchorX": "0%",
+                  "centerAnchorY": "0%",
+                  "constraintsLocked": false,
+                  "pointerEvents": "none",
+                  "radius": "50%",
+                  "width": "880px",
+                  "height": "880px"
+                }
+              },
+              {
+                "type": "IconNode",
+                "id": "HJcltHRU3",
+                "name": "Distant Star",
+                "set": "Y7SpbVH16cWqMhj75z1M",
+                "$control__icon": "Star",
+                "$rect": {
+                  "height": 9
+                },
+                "attributes": {
+                  "$control__color": "#F0EBDD",
+                  "$control__width": "1",
+                  "opacity": "0.3",
+                  "position": "absolute",
+                  "left": "240px",
+                  "right": "null",
+                  "top": "90px",
+                  "bottom": "null",
+                  "centerAnchorX": "0%",
+                  "centerAnchorY": "0%",
+                  "constraintsLocked": false,
+                  "pointerEvents": "none",
+                  "width": "9px",
+                  "height": "auto"
+                }
+              },
+              {
+                "type": "IconNode",
+                "id": "G8pGTx44I",
+                "name": "Distant Star",
+                "set": "Y7SpbVH16cWqMhj75z1M",
+                "$control__icon": "Star",
+                "$rect": {
+                  "height": 12
+                },
+                "attributes": {
+                  "$control__color": "#F0EBDD",
+                  "$control__width": "1",
+                  "opacity": "0.4",
+                  "position": "absolute",
+                  "left": "null",
+                  "right": "220px",
+                  "top": "160px",
+                  "bottom": "null",
+                  "centerAnchorX": "0%",
+                  "centerAnchorY": "0%",
+                  "constraintsLocked": false,
+                  "pointerEvents": "none",
+                  "width": "12px",
+                  "height": "auto"
+                }
+              },
+              {
+                "type": "IconNode",
+                "id": "OPFsgbEkl",
+                "name": "Distant Star",
+                "set": "Y7SpbVH16cWqMhj75z1M",
+                "$control__icon": "Star",
+                "$rect": {
+                  "height": 7
+                },
+                "attributes": {
+                  "$control__color": "#F0EBDD",
+                  "$control__width": "1",
+                  "opacity": "0.25",
+                  "position": "absolute",
+                  "left": "80px",
+                  "right": "null",
+                  "top": "360px",
+                  "bottom": "null",
+                  "centerAnchorX": "0%",
+                  "centerAnchorY": "0%",
+                  "constraintsLocked": false,
+                  "pointerEvents": "none",
+                  "width": "7px",
+                  "height": "auto"
+                }
+              }
+            ]
+          },
+          {
+            "type": "FrameNode",
+            "name": "Two Books, One Story",
+            "id": "jgsoTYEUV",
+            "$rect": {
+              "x": 0,
+              "y": 966,
+              "width": 1200,
+              "height": 1515
+            },
+            "attributes": {
+              "fill": "linear-gradient(180deg, #0B100E 0%, #0B100E 72%, #14251D 100%)",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "40px",
+              "padding": "128px 72px 128px 72px",
+              "position": "relative",
+              "scrollTargetEnabled": true,
+              "elementId": "books",
+              "width": "100%",
+              "height": "auto",
+              "maxWidth": "1200px"
+            },
+            "children": [
+              {
+                "type": "RichTextNode",
+                "id": "bscppCKLm",
+                "$rect": {
+                  "x": 72,
+                  "y": 128,
+                  "width": 1056,
+                  "height": 21
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "textStylePreset": "Label",
+                  "textAlignment": "center"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:bscppCKLm:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:bscppCKLm:0:0",
+                        "attributes": {
+                          "text": "01 / 02 — ONE CONTINUING NARRATIVE"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "RichTextNode",
+                "id": "RdurWE1gL",
+                "$rect": {
+                  "x": 72,
+                  "y": 189,
+                  "width": 1056,
+                  "height": 55
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "textStylePreset": "Section Heading",
+                  "textAlignment": "center",
+                  "textWrap": "balance"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:RdurWE1gL:0",
+                    "attributes": {
+                      "tag": "h2"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:RdurWE1gL:0:0",
+                        "attributes": {
+                          "text": "Begin with a whisper. Follow it into the deep."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "FrameNode",
+                "name": "Connected Books",
+                "id": "b_vYVHtXZ",
+                "$rect": {
+                  "x": 72,
+                  "y": 284,
+                  "width": 1056,
+                  "height": 1103
+                },
+                "attributes": {
+                  "layout": "grid",
+                  "gridAlignment": "center",
+                  "gridColumnCount": 2,
+                  "gridColumnMinWidth": "280px",
+                  "gridRowCount": 1,
+                  "gridRowHeightType": "auto",
+                  "gridRowHeight": "200px",
+                  "gap": "56px",
+                  "position": "relative",
+                  "width": "100%",
+                  "height": "auto"
+                },
+                "children": [
+                  {
+                    "type": "FrameNode",
+                    "name": "Begin the Story",
+                    "id": "Bw_UCW6yR",
+                    "$rect": {
+                      "x": 0,
+                      "y": 0,
+                      "width": 500,
+                      "height": 1103
+                    },
+                    "attributes": {
+                      "layout": "stack",
+                      "stackDirection": "vertical",
+                      "stackDistribution": "start",
+                      "stackAlignment": "center",
+                      "stackWrapEnabled": false,
+                      "gap": "28px",
+                      "overflow": "clip",
+                      "padding": "56px 40px 56px 40px",
+                      "position": "relative",
+                      "width": "1fr",
+                      "height": "1fr"
+                    },
+                    "children": [
+                      {
+                        "type": "RichTextNode",
+                        "id": "s_gla1kyz",
+                        "$rect": {
+                          "x": 40,
+                          "y": 56,
+                          "width": 420,
+                          "height": 21
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Label",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:s_gla1kyz:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:s_gla1kyz:0:0",
+                                "attributes": {
+                                  "text": "01 — BEGIN THE STORY"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "IconNode",
+                        "id": "yljjqNjGD",
+                        "name": "Hidden Magic Motif",
+                        "set": "Y7SpbVH16cWqMhj75z1M",
+                        "$control__icon": "Sparkles",
+                        "$rect": {
+                          "x": 237,
+                          "y": 105,
+                          "height": 26
+                        },
+                        "attributes": {
+                          "$control__color": "var(--token-1eda330a-cca5-49e0-b032-a5a8a982ab65)",
+                          "$control__width": "1",
+                          "position": "relative",
+                          "width": "26px",
+                          "height": "auto"
+                        }
+                      },
+                      {
+                        "type": "FrameNode",
+                        "name": "Skradzione Szepty Cover",
+                        "id": "Nk4obkOUI",
+                        "$rect": {
+                          "x": 110,
+                          "y": 159
+                        },
+                        "attributes": {
+                          "fill": "https://framerusercontent.com/images/nemUpapq5ITUa1jixSOEiI5b81I.jpeg",
+                          "altText": "Authentic cover of Skradzione Szepty. Tom I: Wezwana",
+                          "layout": "null",
+                          "position": "relative",
+                          "width": "280px",
+                          "height": "448px"
+                        }
+                      },
+                      {
+                        "type": "RichTextNode",
+                        "id": "kswkV1rcn",
+                        "$rect": {
+                          "x": 40,
+                          "y": 635,
+                          "width": 420,
+                          "height": 55
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Section Heading",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:kswkV1rcn:0",
+                            "attributes": {
+                              "tag": "h2"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:kswkV1rcn:0:0",
+                                "attributes": {
+                                  "text": "Skradzione Szepty"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "RichTextNode",
+                        "id": "injs1ILUz",
+                        "$rect": {
+                          "x": 40,
+                          "y": 718,
+                          "width": 420,
+                          "height": 33
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Body",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:injs1ILUz:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:injs1ILUz:0:0",
+                                "attributes": {
+                                  "text": "Tom I: Wezwana"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "RichTextNode",
+                        "id": "aXdNkBFKz",
+                        "$rect": {
+                          "x": 40,
+                          "y": 779,
+                          "width": 420,
+                          "height": 132
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Body",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:aXdNkBFKz:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:aXdNkBFKz:0:0",
+                                "attributes": {
+                                  "text": "Every secret has a voice. Not every voice should be heard. Step into a world of hidden magic, dangerous discoveries, and connections that defy the boundaries between the known and the unknown."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "FrameNode",
+                        "name": "Buy Skradzione Szepty — Connect Shop",
+                        "id": "sNAhiKeqt",
+                        "$rect": {
+                          "x": 171,
+                          "y": 939,
+                          "width": 158,
+                          "height": 57
+                        },
+                        "attributes": {
+                          "border": "1px solid #B5A06A",
+                          "fill": "rgba(181,160,106,0.08)",
+                          "layout": "stack",
+                          "stackDirection": "horizontal",
+                          "stackDistribution": "start",
+                          "stackAlignment": "start",
+                          "stackWrapEnabled": false,
+                          "gap": "0px",
+                          "padding": "12px 28px 12px 28px",
+                          "position": "relative",
+                          "radius": "100px",
+                          "width": "auto",
+                          "height": "auto"
+                        },
+                        "children": [
+                          {
+                            "type": "RichTextNode",
+                            "id": "jDZAKuXA0",
+                            "$rect": {
+                              "x": 28,
+                              "y": 12,
+                              "width": 102,
+                              "height": 33
+                            },
+                            "attributes": {
+                              "position": "relative",
+                              "width": "auto",
+                              "height": "auto",
+                              "textStylePreset": "Body",
+                              "textAlignment": "start"
+                            },
+                            "children": [
+                              {
+                                "type": "TextBlock",
+                                "id": "v:jDZAKuXA0:0",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:jDZAKuXA0:0:0",
+                                    "attributes": {
+                                      "text": "Buy the Book"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "RichTextNode",
+                        "id": "bT41vASyC",
+                        "$rect": {
+                          "x": 40,
+                          "y": 1024,
+                          "width": 420,
+                          "height": 21
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Label",
+                          "textAlignment": "center"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:bT41vASyC:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:bT41vASyC:0:0",
+                                "attributes": {
+                                  "text": "Purchase link to be added."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "FrameNode",
+                    "name": "Continue the Journey",
+                    "id": "yqk5KBA0L",
+                    "$rect": {
+                      "x": 556,
+                      "y": 0,
+                      "width": 500,
+                      "height": 1103
+                    },
+                    "attributes": {
+                      "layout": "stack",
+                      "stackDirection": "vertical",
+                      "stackDistribution": "start",
+                      "stackAlignment": "center",
+                      "stackWrapEnabled": false,
+                      "gap": "28px",
+                      "overflow": "clip",
+                      "padding": "56px 40px 56px 40px",
+                      "position": "relative",
+                      "width": "1fr",
+                      "height": "1fr"
+                    },
+                    "children": [
+                      {
+                        "type": "RichTextNode",
+                        "id": "DEb1Vb7OW",
+                        "$rect": {
+                          "x": 40,
+                          "y": 56,
+                          "width": 420,
+                          "height": 21
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Label",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:DEb1Vb7OW:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:DEb1Vb7OW:0:0",
+                                "attributes": {
+                                  "text": "02 — CONTINUE THE JOURNEY"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "IconNode",
+                        "id": "zkaxIhDTY",
+                        "name": "Moon Motif",
+                        "set": "Y7SpbVH16cWqMhj75z1M",
+                        "$control__icon": "Moon",
+                        "$rect": {
+                          "x": 236,
+                          "y": 105,
+                          "height": 28
+                        },
+                        "attributes": {
+                          "$control__color": "var(--token-99ec70cb-bbce-4078-adb5-c3414d108309)",
+                          "$control__width": "1",
+                          "position": "relative",
+                          "width": "28px",
+                          "height": "auto"
+                        }
+                      },
+                      {
+                        "type": "FrameNode",
+                        "name": "Królowa Wiedźm Front Cover",
+                        "id": "kIwERvvLs",
+                        "$rect": {
+                          "x": 110,
+                          "y": 161
+                        },
+                        "attributes": {
+                          "layout": "null",
+                          "overflow": "clip",
+                          "position": "relative",
+                          "width": "280px",
+                          "height": "448px"
+                        },
+                        "children": [
+                          {
+                            "type": "FrameNode",
+                            "name": "Original Wrap Artwork",
+                            "id": "XRkRHRjtk",
+                            "attributes": {
+                              "fill": "https://framerusercontent.com/images/MlPp26Nzyh4kqJM3udPAgr8OQVo.jpeg",
+                              "altText": "Original Królowa Wiedźm cover artwork, front panel",
+                              "layout": "null",
+                              "left": "-537px",
+                              "right": "null",
+                              "top": "-31px",
+                              "bottom": "null",
+                              "centerAnchorX": "0%",
+                              "centerAnchorY": "0%",
+                              "constraintsLocked": false,
+                              "width": "1029px",
+                              "height": "508px"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "RichTextNode",
+                        "id": "MoTA2OT9j",
+                        "$rect": {
+                          "x": 40,
+                          "y": 637,
+                          "width": 420,
+                          "height": 55
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Section Heading",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:MoTA2OT9j:0",
+                            "attributes": {
+                              "tag": "h2"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:MoTA2OT9j:0:0",
+                                "attributes": {
+                                  "text": "Królowa Wiedźm"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "RichTextNode",
+                        "id": "I93lJt8uk",
+                        "$rect": {
+                          "x": 40,
+                          "y": 720,
+                          "width": 420,
+                          "height": 33
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Body",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:I93lJt8uk:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:I93lJt8uk:0:0",
+                                "attributes": {
+                                  "text": "The continuation of Skradzione Szepty"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "RichTextNode",
+                        "id": "GkOInrIaZ",
+                        "$rect": {
+                          "x": 40,
+                          "y": 781,
+                          "width": 420,
+                          "height": 132
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Body",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:GkOInrIaZ:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:GkOInrIaZ:0:0",
+                                "attributes": {
+                                  "text": "Some destinies are inherited. Others must be fought for. The story continues in Królowa Wiedźm, where magic brings responsibility, alliances carry a price, and choices can change the fate of many."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "FrameNode",
+                        "name": "Buy Królowa Wiedźm — Connect Shop",
+                        "id": "x14kC1tOu",
+                        "$rect": {
+                          "x": 171,
+                          "y": 941,
+                          "width": 158,
+                          "height": 57
+                        },
+                        "attributes": {
+                          "border": "1px solid #B5A06A",
+                          "fill": "rgba(181,160,106,0.08)",
+                          "layout": "stack",
+                          "stackDirection": "horizontal",
+                          "stackDistribution": "start",
+                          "stackAlignment": "start",
+                          "stackWrapEnabled": false,
+                          "gap": "0px",
+                          "padding": "12px 28px 12px 28px",
+                          "position": "relative",
+                          "radius": "100px",
+                          "width": "auto",
+                          "height": "auto"
+                        },
+                        "children": [
+                          {
+                            "type": "RichTextNode",
+                            "id": "cJcH4Dwup",
+                            "$rect": {
+                              "x": 28,
+                              "y": 12,
+                              "width": 102,
+                              "height": 33
+                            },
+                            "attributes": {
+                              "position": "relative",
+                              "width": "auto",
+                              "height": "auto",
+                              "textStylePreset": "Body",
+                              "textAlignment": "start"
+                            },
+                            "children": [
+                              {
+                                "type": "TextBlock",
+                                "id": "v:cJcH4Dwup:0",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:cJcH4Dwup:0:0",
+                                    "attributes": {
+                                      "text": "Buy the Book"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "RichTextNode",
+                        "id": "u9hrtRO2x",
+                        "$rect": {
+                          "x": 40,
+                          "y": 1026,
+                          "width": 420,
+                          "height": 21
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Label",
+                          "textAlignment": "center"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:u9hrtRO2x:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:u9hrtRO2x:0:0",
+                                "attributes": {
+                                  "text": "Purchase link to be added."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "FrameNode",
+            "name": "Threads Through the Story",
+            "id": "BBpoP28CQ",
+            "$rect": {
+              "x": 0,
+              "y": 2481,
+              "width": 1200,
+              "height": 844
+            },
+            "attributes": {
+              "fill": "var(--token-27cd4ac4-d3cc-48f8-b4e4-7f6d14cadbe0)",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "start",
+              "stackWrapEnabled": false,
+              "gap": "32px",
+              "overflow": "clip",
+              "padding": "112px 120px 112px 120px",
+              "position": "relative",
+              "width": "100%",
+              "height": "auto",
+              "maxWidth": "1200px"
+            },
+            "children": [
+              {
+                "type": "RichTextNode",
+                "id": "zXATEICyU",
+                "$rect": {
+                  "x": 120,
+                  "y": 112,
+                  "width": 960,
+                  "height": 21
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "textStylePreset": "Label",
+                  "textAlignment": "start"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:zXATEICyU:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:zXATEICyU:0:0",
+                        "attributes": {
+                          "text": "THREADS THROUGH THE STORY"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "RichTextNode",
+                "id": "fBFv8zunU",
+                "$rect": {
+                  "x": 120,
+                  "y": 165,
+                  "width": 960,
+                  "height": 55
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "textStylePreset": "Section Heading",
+                  "textAlignment": "start"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:fBFv8zunU:0",
+                    "attributes": {
+                      "tag": "h2"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:fBFv8zunU:0:0",
+                        "attributes": {
+                          "text": "The magic beneath the surface."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "RichTextNode",
+                "id": "r26Kdht8Q",
+                "$rect": {
+                  "x": 120,
+                  "y": 252,
+                  "width": 720,
+                  "height": 66
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "maxWidth": "720px",
+                  "textStylePreset": "Body",
+                  "textAlignment": "start"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:r26Kdht8Q:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:r26Kdht8Q:0:0",
+                        "attributes": {
+                          "text": "Mystery, emotional bonds, and the consequences of choice connect Skradzione Szepty with its continuation, Królowa Wiedźm."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "FrameNode",
+                "name": "Themes and Soundtracks by Book",
+                "id": "e1D3WJfYU",
+                "$rect": {
+                  "x": 120,
+                  "y": 350,
+                  "width": 960,
+                  "height": 382
+                },
+                "attributes": {
+                  "layout": "grid",
+                  "gridAlignment": "center",
+                  "gridColumnCount": 2,
+                  "gridColumnMinWidth": "280px",
+                  "gridRowCount": 1,
+                  "gridRowHeightType": "auto",
+                  "gridRowHeight": "200px",
+                  "gap": "56px",
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto"
+                },
+                "children": [
+                  {
+                    "type": "FrameNode",
+                    "name": "Skradzione Szepty Themes",
+                    "id": "OnEQZO0Qe",
+                    "$rect": {
+                      "x": 0,
+                      "y": 0,
+                      "width": 452,
+                      "height": 382
+                    },
+                    "attributes": {
+                      "layout": "stack",
+                      "stackDirection": "vertical",
+                      "stackDistribution": "start",
+                      "stackAlignment": "start",
+                      "stackWrapEnabled": false,
+                      "gap": "28px",
+                      "position": "relative",
+                      "width": "1fr",
+                      "height": "1fr"
+                    },
+                    "children": [
+                      {
+                        "type": "RichTextNode",
+                        "id": "m1Ei98M1H",
+                        "$rect": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 452,
+                          "height": 55
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Section Heading",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:m1Ei98M1H:0",
+                            "attributes": {
+                              "tag": "h2"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:m1Ei98M1H:0:0",
+                                "attributes": {
+                                  "text": "Skradzione Szepty"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "RichTextNode",
+                        "name": "First Book Motifs",
+                        "id": "QyjOX0y4B",
+                        "$rect": {
+                          "x": 0,
+                          "y": 83,
+                          "width": 452,
+                          "height": 165
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Body",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBulletList",
+                            "id": "v:QyjOX0y4B:0",
+                            "attributes": {},
+                            "children": [
+                              {
+                                "type": "TextListItem",
+                                "id": "v:QyjOX0y4B:0:0",
+                                "attributes": {},
+                                "children": [
+                                  {
+                                    "type": "TextBlock",
+                                    "id": "v:QyjOX0y4B:0:0:0",
+                                    "attributes": {
+                                      "tag": "p"
+                                    },
+                                    "children": [
+                                      {
+                                        "type": "TextRun",
+                                        "id": "v:QyjOX0y4B:0:0:0:0",
+                                        "attributes": {
+                                          "text": "Hidden magic and whispered secrets."
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "TextListItem",
+                                "id": "v:QyjOX0y4B:0:1",
+                                "attributes": {},
+                                "children": [
+                                  {
+                                    "type": "TextBlock",
+                                    "id": "v:QyjOX0y4B:0:1:0",
+                                    "attributes": {
+                                      "tag": "p"
+                                    },
+                                    "children": [
+                                      {
+                                        "type": "TextRun",
+                                        "id": "v:QyjOX0y4B:0:1:0:0",
+                                        "attributes": {
+                                          "text": "Dangerous discoveries and the boundary between the known and the unknown."
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "TextListItem",
+                                "id": "v:QyjOX0y4B:0:2",
+                                "attributes": {},
+                                "children": [
+                                  {
+                                    "type": "TextBlock",
+                                    "id": "v:QyjOX0y4B:0:2:0",
+                                    "attributes": {
+                                      "tag": "p"
+                                    },
+                                    "children": [
+                                      {
+                                        "type": "TextRun",
+                                        "id": "v:QyjOX0y4B:0:2:0:0",
+                                        "attributes": {
+                                          "text": "Extraordinary connections and choices with far-reaching consequences."
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "FrameNode",
+                        "name": "Spotify — Skradzione Szepty Playlist",
+                        "id": "xlbYbZybv",
+                        "$rect": {
+                          "x": 0,
+                          "y": 276,
+                          "width": 270,
+                          "height": 57
+                        },
+                        "attributes": {
+                          "border": "1px solid #B5A06A",
+                          "layout": "stack",
+                          "stackDirection": "horizontal",
+                          "stackDistribution": "start",
+                          "stackAlignment": "start",
+                          "stackWrapEnabled": false,
+                          "gap": "0px",
+                          "padding": "12px 24px 12px 24px",
+                          "position": "relative",
+                          "radius": "100px",
+                          "width": "auto",
+                          "height": "auto"
+                        },
+                        "children": [
+                          {
+                            "type": "RichTextNode",
+                            "id": "kaOAjL9pl",
+                            "$rect": {
+                              "x": 24,
+                              "y": 12,
+                              "width": 222,
+                              "height": 33
+                            },
+                            "attributes": {
+                              "position": "relative",
+                              "width": "auto",
+                              "height": "auto",
+                              "textStylePreset": "Body",
+                              "textAlignment": "start"
+                            },
+                            "children": [
+                              {
+                                "type": "TextBlock",
+                                "id": "v:kaOAjL9pl:0",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:kaOAjL9pl:0:0",
+                                    "attributes": {
+                                      "text": "Spotify — Skradzione Szepty"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "RichTextNode",
+                        "id": "YmA58xTy9",
+                        "$rect": {
+                          "x": 0,
+                          "y": 361,
+                          "width": 452,
+                          "height": 21
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Label",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:YmA58xTy9:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:YmA58xTy9:0:0",
+                                "attributes": {
+                                  "text": "Playlist link to be added."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "FrameNode",
+                    "name": "Królowa Wiedźm Themes",
+                    "id": "rVHskxxY4",
+                    "$rect": {
+                      "x": 508,
+                      "y": 0,
+                      "width": 452,
+                      "height": 382
+                    },
+                    "attributes": {
+                      "layout": "stack",
+                      "stackDirection": "vertical",
+                      "stackDistribution": "start",
+                      "stackAlignment": "start",
+                      "stackWrapEnabled": false,
+                      "gap": "28px",
+                      "position": "relative",
+                      "width": "1fr",
+                      "height": "1fr"
+                    },
+                    "children": [
+                      {
+                        "type": "RichTextNode",
+                        "id": "bIKiVK12k",
+                        "$rect": {
+                          "x": 0,
+                          "y": 0,
+                          "width": 452,
+                          "height": 55
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Section Heading",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:bIKiVK12k:0",
+                            "attributes": {
+                              "tag": "h2"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:bIKiVK12k:0:0",
+                                "attributes": {
+                                  "text": "Królowa Wiedźm"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "RichTextNode",
+                        "name": "Continuation Motifs",
+                        "id": "LNlyWaBEK",
+                        "$rect": {
+                          "x": 0,
+                          "y": 83,
+                          "width": 452,
+                          "height": 165
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Body",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBulletList",
+                            "id": "v:LNlyWaBEK:0",
+                            "attributes": {},
+                            "children": [
+                              {
+                                "type": "TextListItem",
+                                "id": "v:LNlyWaBEK:0:0",
+                                "attributes": {},
+                                "children": [
+                                  {
+                                    "type": "TextBlock",
+                                    "id": "v:LNlyWaBEK:0:0:0",
+                                    "attributes": {
+                                      "tag": "p"
+                                    },
+                                    "children": [
+                                      {
+                                        "type": "TextRun",
+                                        "id": "v:LNlyWaBEK:0:0:0:0",
+                                        "attributes": {
+                                          "text": "Empathy, shared emotions, and bonds with magical creatures."
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "TextListItem",
+                                "id": "v:LNlyWaBEK:0:1",
+                                "attributes": {},
+                                "children": [
+                                  {
+                                    "type": "TextBlock",
+                                    "id": "v:LNlyWaBEK:0:1:0",
+                                    "attributes": {
+                                      "tag": "p"
+                                    },
+                                    "children": [
+                                      {
+                                        "type": "TextRun",
+                                        "id": "v:LNlyWaBEK:0:1:0:0",
+                                        "attributes": {
+                                          "text": "Power, responsibility, and the consequences of extraordinary abilities."
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "type": "TextListItem",
+                                "id": "v:LNlyWaBEK:0:2",
+                                "attributes": {},
+                                "children": [
+                                  {
+                                    "type": "TextBlock",
+                                    "id": "v:LNlyWaBEK:0:2:0",
+                                    "attributes": {
+                                      "tag": "p"
+                                    },
+                                    "children": [
+                                      {
+                                        "type": "TextRun",
+                                        "id": "v:LNlyWaBEK:0:2:0:0",
+                                        "attributes": {
+                                          "text": "Kingdoms, alliances, loyalty, and trust."
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "FrameNode",
+                        "name": "Spotify — Królowa Wiedźm Playlist",
+                        "id": "Gc688agqW",
+                        "$rect": {
+                          "x": 0,
+                          "y": 276,
+                          "width": 262,
+                          "height": 57
+                        },
+                        "attributes": {
+                          "border": "1px solid #B5A06A",
+                          "layout": "stack",
+                          "stackDirection": "horizontal",
+                          "stackDistribution": "start",
+                          "stackAlignment": "start",
+                          "stackWrapEnabled": false,
+                          "gap": "0px",
+                          "padding": "12px 24px 12px 24px",
+                          "position": "relative",
+                          "radius": "100px",
+                          "width": "auto",
+                          "height": "auto"
+                        },
+                        "children": [
+                          {
+                            "type": "RichTextNode",
+                            "id": "J3gW4PqLp",
+                            "$rect": {
+                              "x": 24,
+                              "y": 12,
+                              "width": 214,
+                              "height": 33
+                            },
+                            "attributes": {
+                              "position": "relative",
+                              "width": "auto",
+                              "height": "auto",
+                              "textStylePreset": "Body",
+                              "textAlignment": "start"
+                            },
+                            "children": [
+                              {
+                                "type": "TextBlock",
+                                "id": "v:J3gW4PqLp:0",
+                                "attributes": {
+                                  "tag": "p"
+                                },
+                                "children": [
+                                  {
+                                    "type": "TextRun",
+                                    "id": "v:J3gW4PqLp:0:0",
+                                    "attributes": {
+                                      "text": "Spotify — Królowa Wiedźm"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "RichTextNode",
+                        "id": "rSuxMzeAS",
+                        "$rect": {
+                          "x": 0,
+                          "y": 361,
+                          "width": 452,
+                          "height": 21
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "1fr",
+                          "height": "auto",
+                          "textStylePreset": "Label",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:rSuxMzeAS:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:rSuxMzeAS:0:0",
+                                "attributes": {
+                                  "text": "Playlist link to be added."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "FrameNode",
+            "name": "Closer to the Author",
+            "id": "zKmj2KjGb",
+            "$rect": {
+              "x": 0,
+              "y": 3325,
+              "width": 1200,
+              "height": 682
+            },
+            "attributes": {
+              "fill": "linear-gradient(180deg, #14251D 0%, #071426 100%)",
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "80px",
+              "overflow": "clip",
+              "padding": "112px 96px 112px 96px",
+              "position": "relative",
+              "width": "100%",
+              "height": "auto",
+              "maxWidth": "1200px"
+            },
+            "children": [
+              {
+                "type": "FrameNode",
+                "name": "Author Portrait",
+                "id": "s41jPvoGx",
+                "$rect": {
+                  "x": 96,
+                  "y": 146
+                },
+                "attributes": {
+                  "fill": "https://framerusercontent.com/images/YDhahrz4I2Au49vchc4iqg6JPxQ.jpeg",
+                  "altText": "K.T. Writz reading Skradzione Szepty outdoors",
+                  "layout": "null",
+                  "position": "relative",
+                  "width": "280px",
+                  "height": "390px"
+                }
+              },
+              {
+                "type": "FrameNode",
+                "name": "Personal Invitation",
+                "id": "GuN7zdfBQ",
+                "$rect": {
+                  "x": 456,
+                  "y": 112,
+                  "width": 648,
+                  "height": 458
+                },
+                "attributes": {
+                  "layout": "stack",
+                  "stackDirection": "vertical",
+                  "stackDistribution": "start",
+                  "stackAlignment": "start",
+                  "stackWrapEnabled": false,
+                  "gap": "28px",
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto"
+                },
+                "children": [
+                  {
+                    "type": "IconNode",
+                    "id": "pve9V18GE",
+                    "name": "Writing Motif",
+                    "set": "Y7SpbVH16cWqMhj75z1M",
+                    "$control__icon": "Feather",
+                    "$rect": {
+                      "x": 0,
+                      "y": 0,
+                      "height": 28
+                    },
+                    "attributes": {
+                      "$control__color": "var(--token-1eda330a-cca5-49e0-b032-a5a8a982ab65)",
+                      "$control__width": "1",
+                      "position": "relative",
+                      "width": "28px",
+                      "height": "auto"
+                    }
+                  },
+                  {
+                    "type": "RichTextNode",
+                    "id": "W2efoLTDf",
+                    "$rect": {
+                      "x": 0,
+                      "y": 56,
+                      "width": 648,
+                      "height": 21
+                    },
+                    "attributes": {
+                      "position": "relative",
+                      "width": "1fr",
+                      "height": "auto",
+                      "textStylePreset": "Label",
+                      "textAlignment": "start"
+                    },
+                    "children": [
+                      {
+                        "type": "TextBlock",
+                        "id": "v:W2efoLTDf:0",
+                        "attributes": {
+                          "tag": "p"
+                        },
+                        "children": [
+                          {
+                            "type": "TextRun",
+                            "id": "v:W2efoLTDf:0:0",
+                            "attributes": {
+                              "text": "NOTES FROM BEHIND THE PAGES"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "RichTextNode",
+                    "id": "JfHJ6vXwS",
+                    "$rect": {
+                      "x": 0,
+                      "y": 105,
+                      "width": 648,
+                      "height": 56
+                    },
+                    "attributes": {
+                      "position": "relative",
+                      "width": "1fr",
+                      "height": "auto",
+                      "textStylePreset": "Section Heading",
+                      "textAlignment": "start",
+                      "textWrap": "balance"
+                    },
+                    "children": [
+                      {
+                        "type": "TextBlock",
+                        "id": "v:JfHJ6vXwS:0",
+                        "attributes": {
+                          "tag": "h2"
+                        },
+                        "children": [
+                          {
+                            "type": "TextRun",
+                            "id": "v:JfHJ6vXwS:0:0",
+                            "attributes": {
+                              "text": "A little closer to the author."
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "RichTextNode",
+                    "id": "T8D5AKObN",
+                    "$rect": {
+                      "x": 0,
+                      "y": 189,
+                      "width": 648,
+                      "height": 99
+                    },
+                    "attributes": {
+                      "position": "relative",
+                      "width": "1fr",
+                      "height": "auto",
+                      "textStylePreset": "Body",
+                      "textAlignment": "start",
+                      "textWrap": "pretty"
+                    },
+                    "children": [
+                      {
+                        "type": "TextBlock",
+                        "id": "v:T8D5AKObN:0",
+                        "attributes": {
+                          "tag": "p"
+                        },
+                        "children": [
+                          {
+                            "type": "TextRun",
+                            "id": "v:T8D5AKObN:0:0",
+                            "attributes": {
+                              "text": "Join me on Substack for personal essays, writing notes, creative discoveries, and thoughts from behind the pages. A quieter space for readers who want to follow the person behind the stories."
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "FrameNode",
+                    "name": "Read on Substack",
+                    "id": "F7wgvNGtq",
+                    "$rect": {
+                      "x": 0,
+                      "y": 316,
+                      "width": 191,
+                      "height": 57
+                    },
+                    "attributes": {
+                      "border": "1px solid #B5A06A",
+                      "fill": "rgba(181,160,106,0.08)",
+                      "layout": "stack",
+                      "stackDirection": "horizontal",
+                      "stackDistribution": "start",
+                      "stackAlignment": "start",
+                      "stackWrapEnabled": false,
+                      "gap": "0px",
+                      "link": {
+                        "href": "https://ktwritz.substack.com"
+                      },
+                      "padding": "12px 28px 12px 28px",
+                      "position": "relative",
+                      "radius": "100px",
+                      "width": "auto",
+                      "height": "auto"
+                    },
+                    "children": [
+                      {
+                        "type": "RichTextNode",
+                        "id": "uuOCUhDYQ",
+                        "$rect": {
+                          "x": 28,
+                          "y": 12,
+                          "width": 135,
+                          "height": 33
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "auto",
+                          "height": "auto",
+                          "textStylePreset": "Body",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:uuOCUhDYQ:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:uuOCUhDYQ:0:0",
+                                "attributes": {
+                                  "text": "Read on Substack"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "FrameNode",
+                    "name": "Instagram — Add Profile Link",
+                    "id": "SKUVAN6SF",
+                    "$rect": {
+                      "x": 0,
+                      "y": 401,
+                      "width": 362,
+                      "height": 57
+                    },
+                    "attributes": {
+                      "border": "1px solid rgba(181,160,106,0.35)",
+                      "layout": "stack",
+                      "stackDirection": "horizontal",
+                      "stackDistribution": "start",
+                      "stackAlignment": "center",
+                      "stackWrapEnabled": false,
+                      "gap": "12px",
+                      "padding": "12px 20px 12px 20px",
+                      "position": "relative",
+                      "radius": "100px",
+                      "width": "auto",
+                      "height": "auto"
+                    },
+                    "children": [
+                      {
+                        "type": "IconNode",
+                        "id": "sFrEUuBa9",
+                        "name": "Instagram",
+                        "set": "Y7SpbVH16cWqMhj75z1M",
+                        "$control__icon": "Instagram",
+                        "$rect": {
+                          "x": 20,
+                          "y": 18,
+                          "height": 20
+                        },
+                        "attributes": {
+                          "$control__color": "#F0EBDD",
+                          "$control__width": "1",
+                          "position": "relative",
+                          "width": "20px",
+                          "height": "auto"
+                        }
+                      },
+                      {
+                        "type": "RichTextNode",
+                        "id": "K5QBoa4gc",
+                        "$rect": {
+                          "x": 52,
+                          "y": 12,
+                          "width": 290,
+                          "height": 33
+                        },
+                        "attributes": {
+                          "position": "relative",
+                          "width": "auto",
+                          "height": "auto",
+                          "textStylePreset": "Body",
+                          "textAlignment": "start"
+                        },
+                        "children": [
+                          {
+                            "type": "TextBlock",
+                            "id": "v:K5QBoa4gc:0",
+                            "attributes": {
+                              "tag": "p"
+                            },
+                            "children": [
+                              {
+                                "type": "TextRun",
+                                "id": "v:K5QBoa4gc:0:0",
+                                "attributes": {
+                                  "text": "Instagram — profile link coming soon"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "IconNode",
+                "id": "slKFtvlbj",
+                "name": "Distant Star",
+                "set": "Y7SpbVH16cWqMhj75z1M",
+                "$control__icon": "Star",
+                "$rect": {
+                  "height": 10
+                },
+                "attributes": {
+                  "$control__color": "#F0EBDD",
+                  "$control__width": "1",
+                  "opacity": "0.3",
+                  "position": "absolute",
+                  "left": "null",
+                  "right": "48px",
+                  "top": "null",
+                  "bottom": "160px",
+                  "centerAnchorX": "0%",
+                  "centerAnchorY": "0%",
+                  "constraintsLocked": false,
+                  "pointerEvents": "none",
+                  "width": "10px",
+                  "height": "auto"
+                }
+              },
+              {
+                "type": "IconNode",
+                "id": "hQsaA8PYk",
+                "name": "Distant Star",
+                "set": "Y7SpbVH16cWqMhj75z1M",
+                "$control__icon": "Star",
+                "$rect": {
+                  "height": 7
+                },
+                "attributes": {
+                  "$control__color": "#F0EBDD",
+                  "$control__width": "1",
+                  "opacity": "0.25",
+                  "position": "absolute",
+                  "left": "420px",
+                  "right": "null",
+                  "top": "null",
+                  "bottom": "60px",
+                  "centerAnchorX": "0%",
+                  "centerAnchorY": "0%",
+                  "constraintsLocked": false,
+                  "pointerEvents": "none",
+                  "width": "7px",
+                  "height": "auto"
+                }
+              }
+            ]
+          },
+          {
+            "type": "FrameNode",
+            "name": "Literary Fragments",
+            "id": "c4voA_zhO",
+            "$rect": {
+              "x": 0,
+              "y": 4007,
+              "width": 1200,
+              "height": 534
+            },
+            "attributes": {
+              "fill": "linear-gradient(180deg, #071426 0%, #0B100E 100%)",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "32px",
+              "overflow": "clip",
+              "padding": "120px",
+              "position": "relative",
+              "width": "100%",
+              "height": "auto",
+              "maxWidth": "1200px"
+            },
+            "children": [
+              {
+                "type": "IconNode",
+                "id": "QQkoNI83S",
+                "name": "Quotation Emblem",
+                "set": "Y7SpbVH16cWqMhj75z1M",
+                "$control__icon": "Quote",
+                "$rect": {
+                  "x": 582,
+                  "y": 120,
+                  "height": 36
+                },
+                "attributes": {
+                  "$control__color": "#B5A06A",
+                  "$control__width": "1",
+                  "position": "relative",
+                  "width": "36px",
+                  "height": "auto"
+                }
+              },
+              {
+                "type": "RichTextNode",
+                "id": "cNmJoHGa8",
+                "$rect": {
+                  "x": 120,
+                  "y": 188,
+                  "width": 960,
+                  "height": 21
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "textStylePreset": "Label",
+                  "textAlignment": "center"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:cNmJoHGa8:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:cNmJoHGa8:0:0",
+                        "attributes": {
+                          "text": "LITERARY FRAGMENTS"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "RichTextNode",
+                "id": "AR0MtHjyQ",
+                "$rect": {
+                  "x": 220,
+                  "y": 241,
+                  "width": 760,
+                  "height": 55
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "maxWidth": "760px",
+                  "textStylePreset": "Section Heading",
+                  "textAlignment": "center",
+                  "textWrap": "balance"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:AR0MtHjyQ:0",
+                    "attributes": {
+                      "tag": "h2"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:AR0MtHjyQ:0:0",
+                        "attributes": {
+                          "text": "Words that linger long after the last page."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "RichTextNode",
+                "name": "Approved Excerpt Placeholder",
+                "id": "KhQEj9QJS",
+                "$rect": {
+                  "x": 120,
+                  "y": 328,
+                  "width": 960,
+                  "height": 33
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "textStylePreset": "Body",
+                  "textAlignment": "center"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:KhQEj9QJS:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:KhQEj9QJS:0:0",
+                        "attributes": {
+                          "text": "An author-approved excerpt will appear here."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "RichTextNode",
+                "id": "I725lXLPS",
+                "$rect": {
+                  "x": 120,
+                  "y": 393,
+                  "width": 960,
+                  "height": 21
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "textStylePreset": "Label",
+                  "textAlignment": "center"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:I725lXLPS:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:I725lXLPS:0:0",
+                        "attributes": {
+                          "text": "Skradzione Szepty / Królowa Wiedźm"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "IconNode",
+                "id": "m1aQJ0e74",
+                "name": "Distant Star",
+                "set": "Y7SpbVH16cWqMhj75z1M",
+                "$control__icon": "Star",
+                "$rect": {
+                  "height": 10
+                },
+                "attributes": {
+                  "$control__color": "#F0EBDD",
+                  "$control__width": "1",
+                  "opacity": "0.3",
+                  "position": "absolute",
+                  "left": "90px",
+                  "right": "null",
+                  "top": "70px",
+                  "bottom": "null",
+                  "centerAnchorX": "0%",
+                  "centerAnchorY": "0%",
+                  "constraintsLocked": false,
+                  "pointerEvents": "none",
+                  "width": "10px",
+                  "height": "auto"
+                }
+              },
+              {
+                "type": "IconNode",
+                "id": "ZFyTFebz0",
+                "name": "Distant Star",
+                "set": "Y7SpbVH16cWqMhj75z1M",
+                "$control__icon": "Star",
+                "$rect": {
+                  "height": 7
+                },
+                "attributes": {
+                  "$control__color": "#F0EBDD",
+                  "$control__width": "1",
+                  "opacity": "0.3",
+                  "position": "absolute",
+                  "left": "null",
+                  "right": "160px",
+                  "top": "120px",
+                  "bottom": "null",
+                  "centerAnchorX": "0%",
+                  "centerAnchorY": "0%",
+                  "constraintsLocked": false,
+                  "pointerEvents": "none",
+                  "width": "7px",
+                  "height": "auto"
+                }
+              },
+              {
+                "type": "IconNode",
+                "id": "BHAdDHVh3",
+                "name": "Distant Star",
+                "set": "Y7SpbVH16cWqMhj75z1M",
+                "$control__icon": "Star",
+                "$rect": {
+                  "height": 12
+                },
+                "attributes": {
+                  "$control__color": "#F0EBDD",
+                  "$control__width": "1",
+                  "opacity": "0.25",
+                  "position": "absolute",
+                  "left": "null",
+                  "right": "70px",
+                  "top": "260px",
+                  "bottom": "null",
+                  "centerAnchorX": "0%",
+                  "centerAnchorY": "0%",
+                  "constraintsLocked": false,
+                  "pointerEvents": "none",
+                  "width": "12px",
+                  "height": "auto"
+                }
+              }
+            ]
+          },
+          {
+            "type": "FrameNode",
+            "name": "Third and Final Part — In Preparation",
+            "id": "TBX_HDutQ",
+            "$rect": {
+              "x": 0,
+              "y": 4541,
+              "width": 1200,
+              "height": 507
+            },
+            "attributes": {
+              "fill": "linear-gradient(180deg, #0B100E 0%, #241214 35%, #301417 55.00000000000001%, #1C1112 78%, #0B100E 100%)",
+              "layout": "stack",
+              "stackDirection": "vertical",
+              "stackDistribution": "start",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "gap": "28px",
+              "overflow": "clip",
+              "padding": "112px 120px 112px 120px",
+              "position": "relative",
+              "width": "100%",
+              "height": "auto",
+              "maxWidth": "1200px"
+            },
+            "children": [
+              {
+                "type": "RichTextNode",
+                "id": "UBH0wz4RX",
+                "$rect": {
+                  "x": 120,
+                  "y": 112,
+                  "width": 960,
+                  "height": 21
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "textStylePreset": "Label",
+                  "textAlignment": "center"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:UBH0wz4RX:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:UBH0wz4RX:0:0",
+                        "attributes": {
+                          "text": "03 — THE FINAL PART"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "RichTextNode",
+                "id": "a8uf6CgBR",
+                "$rect": {
+                  "x": 220,
+                  "y": 161,
+                  "width": 760,
+                  "height": 55
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "maxWidth": "760px",
+                  "textStylePreset": "Section Heading",
+                  "textAlignment": "center",
+                  "textWrap": "balance"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:a8uf6CgBR:0",
+                    "attributes": {
+                      "tag": "h2"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:a8uf6CgBR:0:0",
+                        "attributes": {
+                          "text": "The story has one more chapter."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "RichTextNode",
+                "id": "qsC0cHVVE",
+                "$rect": {
+                  "x": 260,
+                  "y": 244,
+                  "width": 680,
+                  "height": 66
+                },
+                "attributes": {
+                  "position": "relative",
+                  "width": "1fr",
+                  "height": "auto",
+                  "maxWidth": "680px",
+                  "textStylePreset": "Body",
+                  "textAlignment": "center",
+                  "textWrap": "pretty"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:qsC0cHVVE:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:qsC0cHVVE:0:0",
+                        "attributes": {
+                          "text": "The third and final part of the story that began with Skradzione Szepty and continued in Królowa Wiedźm is in preparation."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "FrameNode",
+                "name": "Follow Writing Updates",
+                "id": "o9kmMOfwd",
+                "$rect": {
+                  "x": 466,
+                  "y": 338,
+                  "width": 268,
+                  "height": 57
+                },
+                "attributes": {
+                  "border": "1px solid #B5A06A",
+                  "fill": "rgba(181,160,106,0.08)",
+                  "layout": "stack",
+                  "stackDirection": "horizontal",
+                  "stackDistribution": "start",
+                  "stackAlignment": "start",
+                  "stackWrapEnabled": false,
+                  "gap": "0px",
+                  "link": {
+                    "href": "https://ktwritz.substack.com"
+                  },
+                  "padding": "12px 28px 12px 28px",
+                  "position": "relative",
+                  "radius": "100px",
+                  "width": "auto",
+                  "height": "auto"
+                },
+                "children": [
+                  {
+                    "type": "RichTextNode",
+                    "id": "uZjTHJKCJ",
+                    "$rect": {
+                      "x": 28,
+                      "y": 12,
+                      "width": 212,
+                      "height": 33
+                    },
+                    "attributes": {
+                      "position": "relative",
+                      "width": "auto",
+                      "height": "auto",
+                      "textStylePreset": "Body",
+                      "textAlignment": "start"
+                    },
+                    "children": [
+                      {
+                        "type": "TextBlock",
+                        "id": "v:uZjTHJKCJ:0",
+                        "attributes": {
+                          "tag": "p"
+                        },
+                        "children": [
+                          {
+                            "type": "TextRun",
+                            "id": "v:uZjTHJKCJ:0:0",
+                            "attributes": {
+                              "text": "Follow updates on Substack"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "layout": {
+    "type": "LayoutTemplateNode",
+    "id": "WiuUnptEt",
+    "name": "Literary Layout",
+    "variables": [],
+    "$parentId": "sn7IXw6X9",
+    "$breakpoints": [
+      {
+        "id": "pyQQZmo3o",
+        "name": "Desktop"
+      }
+    ],
+    "children": [
+      {
+        "type": "FrameNode",
+        "name": "Desktop",
+        "id": "pyQQZmo3o",
+        "$isPrimary": true,
+        "attributes": {
+          "fill": "var(--token-67858b6a-1add-4fa3-9233-4ab618c4ab80)",
+          "layout": "stack",
+          "stackDirection": "vertical",
+          "stackDistribution": "start",
+          "stackAlignment": "center",
+          "stackWrapEnabled": false,
+          "gap": "0px",
+          "overflow": "clip",
+          "left": "0px",
+          "right": "null",
+          "top": "0px",
+          "bottom": "null",
+          "centerAnchorX": "0%",
+          "centerAnchorY": "0%",
+          "constraintsLocked": false,
+          "width": "1200px",
+          "height": "800px",
+          "transition": "spring-duration 0.4s 0.2 0s"
+        },
+        "children": [
+          {
+            "type": "FrameNode",
+            "name": "Author Masthead",
+            "id": "ncA3elSyZ",
+            "attributes": {
+              "borderStyle": "solid",
+              "borderColor": "#B5A06A",
+              "borderBottom": "1px",
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "space-between",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "padding": "26px 56px 26px 56px",
+              "position": "relative",
+              "width": "100%",
+              "height": "auto"
+            },
+            "children": [
+              {
+                "type": "RichTextNode",
+                "name": "K.T. Writz",
+                "id": "L6QpWATE9",
+                "attributes": {
+                  "position": "relative",
+                  "width": "auto",
+                  "height": "auto",
+                  "fontName": "Cormorant",
+                  "fontStyle": "normal",
+                  "fontWeight": 600,
+                  "fontSize": "28px",
+                  "letterSpacing": "3px",
+                  "lineHeight": "1.2em",
+                  "textAlignment": "start",
+                  "textDecorationStyle": "solid",
+                  "textColor": "var(--token-99ec70cb-bbce-4078-adb5-c3414d108309)"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:L6QpWATE9:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:L6QpWATE9:0:0",
+                        "attributes": {
+                          "text": "K.T. WRITZ"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "RichTextNode",
+                "name": "Substack",
+                "id": "a6w5Ixwjk",
+                "attributes": {
+                  "link": {
+                    "href": "https://ktwritz.substack.com"
+                  },
+                  "linkStylePreset": "Editorial Link",
+                  "position": "relative",
+                  "width": "auto",
+                  "height": "auto",
+                  "textStylePreset": "Body",
+                  "textAlignment": "start"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:a6w5Ixwjk:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:a6w5Ixwjk:0:0",
+                        "attributes": {
+                          "text": "Read on Substack"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "PlaceholderNode",
+            "id": "AefPKx4Dp"
+          },
+          {
+            "type": "FrameNode",
+            "name": "Literary Footer",
+            "id": "zsmeWYjA_",
+            "attributes": {
+              "borderStyle": "solid",
+              "borderColor": "#B5A06A",
+              "borderTop": "1px",
+              "layout": "stack",
+              "stackDirection": "horizontal",
+              "stackDistribution": "space-between",
+              "stackAlignment": "center",
+              "stackWrapEnabled": false,
+              "padding": "32px 56px 32px 56px",
+              "position": "relative",
+              "width": "100%",
+              "height": "auto"
+            },
+            "children": [
+              {
+                "type": "RichTextNode",
+                "id": "jAiawJi8H",
+                "attributes": {
+                  "position": "relative",
+                  "width": "auto",
+                  "height": "auto",
+                  "textStylePreset": "Body",
+                  "textAlignment": "start"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:jAiawJi8H:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:jAiawJi8H:0:0",
+                        "attributes": {
+                          "text": "© 2026 K.T. Writz"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "RichTextNode",
+                "id": "moIkXBDr1",
+                "attributes": {
+                  "link": {
+                    "href": "https://ktwritz.substack.com"
+                  },
+                  "linkStylePreset": "Editorial Link",
+                  "position": "relative",
+                  "width": "auto",
+                  "height": "auto",
+                  "textStylePreset": "Body",
+                  "textAlignment": "start"
+                },
+                "children": [
+                  {
+                    "type": "TextBlock",
+                    "id": "v:moIkXBDr1:0",
+                    "attributes": {
+                      "tag": "p"
+                    },
+                    "children": [
+                      {
+                        "type": "TextRun",
+                        "id": "v:moIkXBDr1:0:0",
+                        "attributes": {
+                          "text": "A little closer to the author. Substack"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
