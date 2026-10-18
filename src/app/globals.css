@@ -47,6 +47,93 @@ a.pill:hover { background: rgba(181, 160, 106, .16); }
 .opening-star-one { left: 240px; top: 90px; width: 9px; height: 9px; opacity: .3; }
 .opening-star-two { right: 220px; top: 160px; width: 12px; height: 12px; opacity: .4; }
 .opening-star-three { left: 80px; top: 360px; width: 7px; height: 7px; opacity: .25; }
+
+/* A slow celestial rhythm, with a brief sweep of light across the lettering. */
+.opening { isolation: isolate; }
+.opening::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 8% 10%;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgb(181 160 106 / 9%), transparent 65%);
+  animation: opening-aura 12s ease-in-out infinite alternate;
+}
+.opening-orbit { animation: opening-orbit 60s linear infinite; }
+.opening > .label { animation: opening-reveal 1s .1s both; }
+.opening h1 { position: relative; animation: opening-reveal 1.2s .2s both; }
+.opening-description { animation: opening-reveal 1.2s .35s both; }
+.opening-actions { animation: opening-reveal 1.2s .5s both; }
+.opening h1::before, .opening h1::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(circle, #fffdf2 8%, #e9cf8e 35%, transparent 72%);
+  clip-path: polygon(50% 0, 59% 40%, 100% 50%, 59% 60%, 50% 100%, 41% 60%, 0 50%, 41% 40%);
+  animation: opening-glint 9s ease-in-out infinite;
+}
+.opening h1::before { left: 18%; top: 12%; animation-delay: .7s; }
+.opening h1::after { right: 13%; bottom: 17%; width: 24px; height: 24px; animation-delay: 2s; }
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .opening-title-text {
+    display: block;
+    background: linear-gradient(110deg, var(--ivory) 40%, #e8cc8a 46%, #fffef5 50%, #e8cc8a 54%, var(--ivory) 60%);
+    background-size: 300% 100%;
+    background-position: 100% 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: opening-shimmer 9s ease-in-out infinite;
+  }
+}
+.opening .constellation {
+  animation: opening-float 8s ease-in-out infinite, opening-twinkle 6s ease-in-out infinite;
+}
+.opening .constellation-right { animation-duration: 11s, 7s; animation-delay: -4s, -2s; }
+.opening .distant-star { color: var(--gold); animation: opening-twinkle 5s ease-in-out infinite; }
+.opening .opening-star-two { animation-duration: 7s; animation-delay: -3s; }
+.opening .opening-star-three { animation-duration: 6s; animation-delay: -1.5s; }
+.opening .celestial-arc { animation: opening-orbit 90s linear infinite; }
+.opening .celestial-arc::before {
+  content: "";
+  position: absolute;
+  left: 85.355%;
+  top: 85.355%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ead5a2;
+  box-shadow: 0 0 10px 3px rgb(225 196 127 / 45%), 0 0 28px 8px rgb(181 160 106 / 15%);
+  transform: translate(-50%, -50%);
+}
+@keyframes opening-reveal {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes opening-orbit { to { transform: rotate(360deg); } }
+@keyframes opening-float {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-14px) rotate(5deg); }
+}
+@keyframes opening-twinkle {
+  0%, 100% { opacity: .25; }
+  50% { opacity: .75; }
+}
+@keyframes opening-aura {
+  from { opacity: .3; transform: scale(.9); }
+  to { opacity: .8; transform: scale(1.1); }
+}
+@keyframes opening-shimmer {
+  0%, 5% { background-position: 100% 50%; }
+  40%, 100% { background-position: 0% 50%; }
+}
+@keyframes opening-glint {
+  0%, 5%, 22%, 100% { opacity: 0; transform: scale(.4) rotate(0deg); }
+  12% { opacity: .9; transform: scale(1.2) rotate(45deg); }
+}
 .books-section { max-width: 1200px; display: flex; flex-direction: column; align-items: center; gap: 40px; padding: 128px 72px; background: linear-gradient(180deg, #0b100e 0%, #0b100e 72%, #14251d 100%); }
 .books-section > .label, .books-section > h2 { width: 100%; text-align: center; }
 .books-section > h2 { text-wrap: balance; }
@@ -161,4 +248,7 @@ a.pill:hover { background: rgba(181, 160, 106, .16); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   a { transition: none; }
+  .opening, .opening::before, .opening *, .opening *::before, .opening *::after { animation: none !important; }
+  .opening-title-text { color: var(--ivory); background: none; }
+  .opening h1::before, .opening h1::after { display: none; }
 }

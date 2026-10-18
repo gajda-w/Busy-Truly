@@ -77,7 +77,7 @@ export default function Home() {
         <section className="opening" aria-labelledby="opening-title" data-reference="xE3mBe93u">
           <Orbit className="opening-orbit" size={56} strokeWidth={1} aria-hidden="true" />
           <p className="label">THE WORLDS OF K.T. WRITZ</p>
-          <h1 id="opening-title">Some worlds are not meant to be discovered. Others will never let you go.</h1>
+          <h1 id="opening-title"><span className="opening-title-text">Some worlds are not meant to be discovered. Others will never let you go.</span></h1>
           <p className="opening-description">
             Enter the worlds of K.T. Writz, where ancient magic awakens, kingdoms collide, and the most dangerous secrets are the ones we carry within ourselves.
           </p>
