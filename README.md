@@ -35,7 +35,9 @@ Otwórz ten folder w VS Code. Integracja `framer` jest zainstalowana lokalnie. D
 
 ## Interaktywne okładki
 
-Obie okładki reagują na pozycję kursora, przechylając się w 3D. Grafiki są wyświetlane bez holograficznego połysku, faktury ani refleksów. Kliknięcie (lub Enter/Spacja po ustawieniu fokusu) otwiera powiększony podgląd na przyciemnionym tle. Esc, przycisk zamknięcia lub kliknięcie tła zamykają podgląd i przywracają fokus do okładki. Na ekranach dotykowych dotknięcie otwiera podgląd; przewijanie pionowe i powiększanie gestem pozostają dostępne. Ustawienie `prefers-reduced-motion` wyłącza przechylenie i animację otwierania.
+Obie książki są bryłami 3D z przednią i tylną okładką, grzbietem z tytułem oraz blokiem kartek widocznym z prawej strony, u góry i na dole. Złote ramki wokół książek zostały usunięte; ramka portretu autorki pozostała. Kolor oprawy jest dopasowany do danej książki (`bindingColor`), a grubość ustawia zmienna CSS `--book-depth`. Tył pozostaje dekoracyjnym rewersem, który można później zastąpić właściwą grafiką.
+
+Książki reagują na pozycję kursora, przechylając się w 3D. Grafiki są wyświetlane bez holograficznego połysku, faktury ani refleksów. Kliknięcie (lub Enter/Spacja po ustawieniu fokusu) otwiera powiększony podgląd na przyciemnionym tle. Esc, przycisk zamknięcia lub kliknięcie tła zamykają podgląd i przywracają fokus do okładki. Na ekranach dotykowych dotknięcie otwiera podgląd; przewijanie pionowe i powiększanie gestem pozostają dostępne. Ustawienie `prefers-reduced-motion` wyłącza ruch, zachowując statyczny widok książki pod kątem.
 
 Implementacja: `src/app/holographic-book.tsx` i `src/app/holographic-book.module.css`. Wizualna inspiracja: [Pokémon Cards CSS Holographic Effect — Simon Goellner](https://poke-holo.simey.me/). Własna implementacja w React i CSS, bez dodatkowych zależności i pobierania zewnętrznych tekstur.
 

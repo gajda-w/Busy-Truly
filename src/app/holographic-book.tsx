@@ -1,10 +1,10 @@
 "use client";
 
-import { useId, useLayoutEffect, useRef, useState, type ReactNode } from "react";
+import { useId, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { Maximize2, X } from "lucide-react";
 import styles from "./holographic-book.module.css";
 
-function HoloSurface({ children, title, reveal = false }: { children: ReactNode; title: string; reveal?: boolean }) {
+function BookSurface({ children, title, bindingColor, reveal = false }: { children: ReactNode; title: string; bindingColor: string; reveal?: boolean }) {
   const scene = useRef<HTMLDivElement>(null);
   const surface = useRef<HTMLDivElement>(null);
 
@@ -25,8 +25,8 @@ function HoloSurface({ children, title, reveal = false }: { children: ReactNode;
       const x = pointerX + Math.sin(angle) * 35;
       const y = pointerY + Math.sin(angle * 2) * 20;
       const activity = Math.max(pointerActivity, Math.min(1, Math.abs(spin) / 20));
-      card.style.setProperty("--rotate-x", `${(50 - y) / 3.5}deg`);
-      card.style.setProperty("--rotate-y", `${(x - 50) / 3}deg`);
+      card.style.setProperty("--rotate-x", `${(50 - y) / 4}deg`);
+      card.style.setProperty("--rotate-y", `${(x - 50) / 1.4}deg`);
       card.style.setProperty("--spin", `${spin}deg`);
       card.style.setProperty("--lift", `${activity * -5}px`);
       card.style.setProperty("--scale", `${1 + activity * 0.025}`);
@@ -113,7 +113,7 @@ function HoloSurface({ children, title, reveal = false }: { children: ReactNode;
   }, [reveal]);
 
   return (
-    <div ref={scene} className={styles.scene}>
+    <div ref={scene} className={styles.scene} style={{ "--binding-color": bindingColor } as CSSProperties}>
       <div ref={surface} className={styles.rotator}>
         <div className={styles.surface}>
           {children}
@@ -124,12 +124,19 @@ function HoloSurface({ children, title, reveal = false }: { children: ReactNode;
           <span className={styles.backTitle}>{title}</span>
           <span className={styles.backOrnament}>✦</span>
         </div>
+        <div className={styles.spine} aria-hidden="true">
+          <span className={styles.spineTitle}>{title}</span>
+          <span className={styles.spineAuthor}>K.T. WRITZ</span>
+        </div>
+        <div className={styles.pagesRight} aria-hidden="true" />
+        <div className={styles.pagesTop} aria-hidden="true" />
+        <div className={styles.pagesBottom} aria-hidden="true" />
       </div>
     </div>
   );
 }
 
-export function HolographicBook({ children, title }: { children: ReactNode; title: string }) {
+export function HolographicBook({ children, title, bindingColor = "#182b22" }: { children: ReactNode; title: string; bindingColor?: string }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const trigger = useRef<HTMLDivElement>(null);
   const preview = useRef<HTMLDivElement>(null);
@@ -209,7 +216,7 @@ export function HolographicBook({ children, title }: { children: ReactNode; titl
           }
         }}
       >
-        <HoloSurface title={title}>{children}</HoloSurface>
+        <BookSurface title={title} bindingColor={bindingColor}>{children}</BookSurface>
         <span className={styles.expand} aria-hidden="true"><Maximize2 size={16} /></span>
       </div>
       <dialog
@@ -227,7 +234,7 @@ export function HolographicBook({ children, title }: { children: ReactNode; titl
             </button>
             <div className={styles.preview}>
               <div ref={preview} className={styles.previewCard}>
-                <HoloSurface title={title} reveal>{children}</HoloSurface>
+                <BookSurface title={title} bindingColor={bindingColor} reveal>{children}</BookSurface>
               </div>
               <p id={titleId} className={styles.caption}>{title}</p>
             </div>
