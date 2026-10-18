@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { Feather, Moon, Orbit, Quote, Sparkles, Star } from "lucide-react";
+import { HolographicBook } from "./holographic-book";
 
 const substack = "https://ktwritz.substack.com";
 
@@ -97,15 +98,17 @@ export default function Home() {
               <article className="book" key={book.id} aria-labelledby={`${book.id}-title`}>
                 <p className="label">{book.label}</p>
                 {index === 0 ? <Sparkles className="gold" size={26} strokeWidth={1} aria-hidden="true" /> : <Moon size={28} strokeWidth={1} aria-hidden="true" />}
-                <GoldFrame>
-                  <div className={`book-cover ${index === 1 ? "wrap-cover" : ""}`}>
-                    {index === 0 ? (
-                      <Image src="/images/skradzione-szepty.jpeg" alt="Authentic cover of Skradzione Szepty. Tom I: Wezwana" fill sizes="280px" loading="eager" className="cover-image" />
-                    ) : (
-                      <Image src="/images/krolowa-wiedzm-wrap.jpeg" alt="Original Królowa Wiedźm cover artwork, front panel" width={1029} height={508} sizes="1029px" loading="eager" className="wrap-image" />
-                    )}
-                  </div>
-                </GoldFrame>
+                <HolographicBook title={book.title}>
+                  <GoldFrame>
+                    <div className={`book-cover ${index === 1 ? "wrap-cover" : ""}`}>
+                      {index === 0 ? (
+                        <Image src="/images/skradzione-szepty.jpeg" alt="Authentic cover of Skradzione Szepty. Tom I: Wezwana" fill sizes="440px" loading="eager" className="cover-image" />
+                      ) : (
+                        <Image src="/images/krolowa-wiedzm-wrap.jpeg" alt="Original Królowa Wiedźm cover artwork, front panel" width={1029} height={508} sizes="1029px" loading="eager" className="wrap-image" />
+                      )}
+                    </div>
+                  </GoldFrame>
+                </HolographicBook>
                 <h2 id={`${book.id}-title`}>{book.title}</h2>
                 <p>{book.subtitle}</p>
                 <p>{book.description}</p>

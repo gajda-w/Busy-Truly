@@ -1,0 +1,147 @@
+.trigger {
+  position: relative;
+  width: 298px;
+  max-width: 100%;
+  flex-shrink: 0;
+  cursor: zoom-in;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: pan-y pinch-zoom;
+}
+
+.trigger:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 12px;
+}
+
+.trigger[aria-expanded="true"] > * { visibility: hidden; }
+
+.scene { width: 100%; position: relative; }
+
+.rotator {
+  --rotate-x: 0deg;
+  --rotate-y: 0deg;
+  --spin: 0deg;
+  --lift: 0px;
+  --scale: 1;
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: perspective(var(--perspective, 850px)) translateY(var(--lift)) rotateY(calc(var(--rotate-y) + var(--spin))) rotateX(var(--rotate-x)) scale(var(--scale));
+}
+
+.surface {
+  position: relative;
+  width: 100%;
+  isolation: isolate;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+}
+
+.surface > :first-child { width: 100%; }
+
+.back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 32px;
+  border: 1px solid var(--gold);
+  background: radial-gradient(ellipse at 50% 35%, #284034, #0b100e 75%);
+  box-shadow: inset 0 0 0 8px var(--ink), inset 0 0 0 9px rgb(181 160 106 / 45%);
+  color: var(--gold);
+  text-align: center;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+.backAuthor { font-family: var(--font-brand), serif; font-size: 28px; letter-spacing: 4px; }
+.backTitle { font-family: var(--font-display), serif; font-size: 24px; }
+.backOrnament { font-size: 28px; }
+
+.expand {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgb(181 160 106 / 60%);
+  border-radius: 50%;
+  background: rgb(11 16 14 / 80%);
+  color: var(--ivory);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.trigger:hover .expand, .trigger:focus-visible .expand { opacity: 1; }
+
+.dialog {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 64px 32px;
+  border: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  background: transparent;
+  color: var(--ivory);
+}
+
+.dialog[open] { display: grid; place-items: center; }
+.dialog::backdrop { background: rgb(3 8 12 / 88%); backdrop-filter: blur(12px); animation: dim .35s ease both; }
+.dialog[data-closing="true"]::backdrop { animation: undim .42s ease both; }
+.dialog[data-closing="true"] .caption { animation: none; opacity: 0; transition: opacity .15s ease; }
+
+.preview {
+  width: min(440px, calc((100dvh - 220px) * .64), 100%);
+}
+
+.previewCard { --perspective: 1400px; position: relative; transform-origin: center; }
+
+.caption {
+  margin-top: 40px;
+  text-align: center;
+  font-family: var(--font-display), serif;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--gold);
+  animation: dim .35s .65s ease both;
+}
+
+.close {
+  position: fixed;
+  top: max(20px, env(safe-area-inset-top));
+  right: max(24px, env(safe-area-inset-right));
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgb(181 160 106 / 55%);
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--ivory);
+  cursor: pointer;
+}
+
+.close:hover { color: var(--gold); background: var(--forest); }
+@keyframes dim { from { opacity: 0; } to { opacity: 1; } }
+@keyframes undim { from { opacity: 1; } to { opacity: 0; } }
+@media (hover: none) { .expand { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .rotator { transform: none; }
+  .back { display: none; }
+  .caption, .dialog::backdrop, .dialog[data-closing="true"]::backdrop { animation: none; }
+  .expand { transition: none; }
+}
