@@ -1,0 +1,22 @@
+.cover {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 280 / 448;
+}
+.frontImage {
+  object-fit: cover;
+}
+.wrap {
+  overflow: clip;
+}
+.wrapImage {
+  position: absolute;
+  max-width: none;
+}
+
+@media (max-width: 760px) {
+  .cover {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,332 @@
+.section {
+  min-height: 880px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding: 128px 96px;
+  text-align: center;
+  background: radial-gradient(50% 50% at 50% 0%, #092d45 0%, var(--midnight) 48%, var(--ink) 100%);
+}
+.orbit {
+  color: var(--gold);
+  opacity: 0.8;
+}
+.section .title {
+  font-size: 68px;
+  line-height: 1.15;
+  width: 100%;
+  max-width: 880px;
+  text-wrap: balance;
+}
+.section > .eyebrow {
+  width: 100%;
+}
+.description {
+  width: 100%;
+  max-width: 640px;
+  text-wrap: pretty;
+}
+.actions {
+  display: flex;
+  gap: 24px;
+  padding: 12px 0;
+}
+.constellation {
+  position: absolute;
+  pointer-events: none;
+}
+.constellationLeft {
+  left: 100px;
+  top: 200px;
+  color: var(--gold);
+  opacity: 0.45;
+}
+.constellationRight {
+  right: 100px;
+  bottom: 180px;
+  opacity: 0.35;
+}
+.arc {
+  position: absolute;
+  pointer-events: none;
+  left: 160px;
+  top: -450px;
+  width: 880px;
+  height: 880px;
+  border-radius: 50%;
+  border: 1px solid rgb(var(--gold-rgb) / 16%);
+}
+.starOne {
+  left: 240px;
+  top: 90px;
+  width: 9px;
+  height: 9px;
+  opacity: 0.3;
+}
+.starTwo {
+  right: 220px;
+  top: 160px;
+  width: 12px;
+  height: 12px;
+  opacity: 0.4;
+}
+.starThree {
+  left: 80px;
+  top: 360px;
+  width: 7px;
+  height: 7px;
+  opacity: 0.25;
+}
+
+/* A slow celestial rhythm, with a brief sweep of light across the lettering. */
+.section {
+  isolation: isolate;
+}
+.section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 8% 10%;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgb(var(--gold-rgb) / 9%), transparent 65%);
+  animation: opening-aura 12s ease-in-out infinite alternate;
+}
+.orbit {
+  animation: opening-orbit 60s linear infinite;
+}
+.section > .eyebrow {
+  animation: opening-reveal 1s 0.1s both;
+}
+.section .title {
+  position: relative;
+  animation: opening-reveal 1.2s 0.2s both;
+}
+.description {
+  animation: opening-reveal 1.2s 0.35s both;
+}
+.actions {
+  animation: opening-reveal 1.2s 0.5s both;
+}
+.section .title::before,
+.section .title::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(circle, #fffdf2 8%, #e9cf8e 35%, transparent 72%);
+  clip-path: polygon(50% 0, 59% 40%, 100% 50%, 59% 60%, 50% 100%, 41% 60%, 0 50%, 41% 40%);
+  animation: opening-glint 9s ease-in-out infinite;
+}
+.section .title::before {
+  left: 18%;
+  top: 12%;
+  animation-delay: 0.7s;
+}
+.section .title::after {
+  right: 13%;
+  bottom: 17%;
+  width: 24px;
+  height: 24px;
+  animation-delay: 2s;
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .titleText {
+    display: block;
+    background: linear-gradient(
+      110deg,
+      var(--ivory) 40%,
+      #e8cc8a 46%,
+      #fffef5 50%,
+      #e8cc8a 54%,
+      var(--ivory) 60%
+    );
+    background-size: 300% 100%;
+    background-position: 100% 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: opening-shimmer 9s ease-in-out infinite;
+  }
+}
+.section .constellation {
+  animation:
+    opening-float 8s ease-in-out infinite,
+    opening-twinkle 6s ease-in-out infinite;
+}
+.section .constellationRight {
+  animation-duration: 11s, 7s;
+  animation-delay:
+    -4s,
+    -2s;
+}
+.section .star {
+  color: var(--gold);
+  animation: opening-twinkle 5s ease-in-out infinite;
+}
+.section .starTwo {
+  animation-duration: 7s;
+  animation-delay: -3s;
+}
+.section .starThree {
+  animation-duration: 6s;
+  animation-delay: -1.5s;
+}
+.section .arc {
+  animation: opening-orbit 90s linear infinite;
+}
+.section .arc::before {
+  content: "";
+  position: absolute;
+  left: 85.355%;
+  top: 85.355%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ead5a2;
+  box-shadow:
+    0 0 10px 3px rgb(225 196 127 / 45%),
+    0 0 28px 8px rgb(var(--gold-rgb) / 15%);
+  transform: translate(-50%, -50%);
+}
+@keyframes opening-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes opening-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes opening-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(5deg);
+  }
+}
+@keyframes opening-twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+@keyframes opening-aura {
+  from {
+    opacity: 0.3;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+@keyframes opening-shimmer {
+  0%,
+  5% {
+    background-position: 100% 50%;
+  }
+  40%,
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes opening-glint {
+  0%,
+  5%,
+  22%,
+  100% {
+    opacity: 0;
+    transform: scale(0.4) rotate(0deg);
+  }
+  12% {
+    opacity: 0.9;
+    transform: scale(1.2) rotate(45deg);
+  }
+}
+
+@media (min-width: 1201px) {
+  .arc {
+    left: calc(50% - 440px);
+  }
+}
+@media (max-width: 1000px) {
+  .section {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+@media (max-width: 760px) {
+  .section {
+    min-height: 780px;
+    padding: 96px 24px;
+    gap: 30px;
+  }
+  .orbit {
+    width: 48px;
+    height: 48px;
+  }
+  .section .title {
+    font-size: clamp(38px, 8vw, 54px);
+    max-width: 540px;
+  }
+  .arc {
+    width: 680px;
+    height: 680px;
+    left: calc(50% - 340px);
+    top: -355px;
+  }
+  .constellationLeft {
+    left: 24px;
+    top: 160px;
+    width: 26px;
+  }
+  .constellationRight {
+    right: 22px;
+    bottom: 70px;
+    width: 32px;
+  }
+  .starOne {
+    left: 70px;
+    top: 60px;
+  }
+  .starTwo {
+    right: 70px;
+    top: 120px;
+  }
+  .starThree {
+    left: 16px;
+    top: 390px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .section,
+  .section::before,
+  .section *,
+  .section *::before,
+  .section *::after {
+    animation: none !important;
+  }
+  .titleText {
+    color: var(--ivory);
+    background: none;
+  }
+  .section .title::before,
+  .section .title::after {
+    display: none;
+  }
+}

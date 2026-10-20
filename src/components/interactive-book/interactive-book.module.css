@@ -1,8 +1,13 @@
 .trigger {
+  display: block;
   position: relative;
   width: 280px;
   max-width: 100%;
   flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: inherit;
   cursor: zoom-in;
   -webkit-tap-highlight-color: transparent;
   touch-action: pan-y pinch-zoom;
@@ -13,9 +18,16 @@
   outline-offset: 12px;
 }
 
-.trigger[aria-expanded="true"] > * { visibility: hidden; }
+.trigger[aria-expanded="true"] > * {
+  visibility: hidden;
+}
 
-.scene { width: 100%; position: relative; container-type: inline-size; }
+.scene {
+  display: block;
+  width: 100%;
+  position: relative;
+  container-type: inline-size;
+}
 
 .scene::before {
   content: "";
@@ -31,6 +43,7 @@
 }
 
 .rotator {
+  display: block;
   --book-depth: clamp(38px, 16cqw, 64px);
   --half-depth: calc(var(--book-depth) / 2);
   --paper-depth: calc(var(--book-depth) - 4px);
@@ -42,10 +55,13 @@
   position: relative;
   width: 100%;
   transform-style: preserve-3d;
-  transform: perspective(var(--perspective, 850px)) translateY(var(--lift)) rotateY(calc(18deg + var(--rotate-y) + var(--spin))) rotateX(calc(-10deg + var(--rotate-x))) scale(var(--scale));
+  transform: perspective(var(--perspective, 850px)) translateY(var(--lift))
+    rotateY(calc(18deg + var(--rotate-y) + var(--spin))) rotateX(calc(-10deg + var(--rotate-x)))
+    scale(var(--scale));
 }
 
 .surface {
+  display: block;
   position: relative;
   width: 100%;
   isolation: isolate;
@@ -56,15 +72,20 @@
   transform: translateZ(var(--half-depth));
 }
 
-.surface > :first-child { width: 100%; }
-
 /* The shallow crease beside the hinge is part of the binding, not a foil overlay. */
 .surface::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: linear-gradient(90deg, rgb(0 0 0 / 28%), transparent 2%, rgb(0 0 0 / 20%) 3%, rgb(255 255 255 / 7%) 3.8%, transparent 5.5%);
+  background: linear-gradient(
+    90deg,
+    rgb(0 0 0 / 28%),
+    transparent 2%,
+    rgb(0 0 0 / 20%) 3%,
+    rgb(255 255 255 / 7%) 3.8%,
+    transparent 5.5%
+  );
   box-shadow: inset 0 0 0 1px rgb(0 0 0 / 20%);
   pointer-events: none;
 }
@@ -79,7 +100,9 @@
   gap: 24px;
   padding: 32px;
   border-radius: 3px 1px 1px 3px;
-  background: radial-gradient(ellipse at 50% 35%, rgb(255 255 255 / 5%), rgb(0 0 0 / 28%)), var(--binding-color);
+  background:
+    radial-gradient(ellipse at 50% 35%, rgb(255 255 255 / 5%), rgb(0 0 0 / 28%)),
+    var(--binding-color);
   box-shadow: inset 0 0 0 1px rgb(0 0 0 / 30%);
   color: var(--ivory);
   text-align: center;
@@ -88,12 +111,33 @@
   pointer-events: none;
 }
 
-.backAuthor { font-family: var(--font-brand), serif; font-size: 28px; letter-spacing: 4px; }
-.backTitle { font-family: var(--font-display), serif; font-size: 24px; }
-.backOrnament { font-size: 28px; }
+.backAuthor {
+  font-family: var(--font-brand), serif;
+  font-size: 28px;
+  letter-spacing: 4px;
+}
+
+/* Duplicate lettering on decorative 3D faces is visual; the cover and trigger
+   provide the accessible name. Generated text avoids labeling hidden backfaces. */
+.backAuthor::before,
+.backTitle::before,
+.spineTitle::before,
+.spineAuthor::before {
+  content: attr(data-lettering);
+}
+.backTitle {
+  font-family: var(--font-display), serif;
+  font-size: 24px;
+}
+.backOrnament {
+  font-size: 28px;
+}
 
 /* Six physical faces share the same depth, so edges stay joined throughout a turn. */
-.spine, .pagesRight, .pagesTop, .pagesBottom {
+.spine,
+.pagesRight,
+.pagesTop,
+.pagesBottom {
   position: absolute;
   backface-visibility: hidden;
   pointer-events: none;
@@ -110,16 +154,40 @@
   justify-content: center;
   gap: 28px;
   padding: 18px 0;
-  background: linear-gradient(90deg, rgb(0 0 0 / 45%), transparent 24%, rgb(255 255 255 / 9%) 55%, rgb(0 0 0 / 25%)), var(--binding-color);
-  box-shadow: inset 1px 0 1px rgb(255 255 255 / 10%), inset -1px 0 2px rgb(0 0 0 / 35%);
+  background:
+    linear-gradient(
+      90deg,
+      rgb(0 0 0 / 45%),
+      transparent 24%,
+      rgb(255 255 255 / 9%) 55%,
+      rgb(0 0 0 / 25%)
+    ),
+    var(--binding-color);
+  box-shadow:
+    inset 1px 0 1px rgb(255 255 255 / 10%),
+    inset -1px 0 2px rgb(0 0 0 / 35%);
   color: var(--ivory);
   transform-origin: left center;
   transform: translateZ(calc(-1 * var(--half-depth))) rotateY(-90deg);
 }
 
-.spineTitle, .spineAuthor { writing-mode: vertical-rl; text-orientation: mixed; white-space: nowrap; }
-.spineTitle { font-family: var(--font-display), serif; font-size: clamp(12px, 3.4cqw, 17px); letter-spacing: .8px; }
-.spineAuthor { font-family: var(--font-brand), serif; font-size: clamp(8px, 2.4cqw, 11px); letter-spacing: 1.5px; opacity: .8; }
+.spineTitle,
+.spineAuthor {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+}
+.spineTitle {
+  font-family: var(--font-display), serif;
+  font-size: clamp(12px, 3.4cqw, 17px);
+  letter-spacing: 0.8px;
+}
+.spineAuthor {
+  font-family: var(--font-brand), serif;
+  font-size: clamp(8px, 2.4cqw, 11px);
+  letter-spacing: 1.5px;
+  opacity: 0.8;
+}
 
 .pagesRight {
   left: calc(100% - 2px);
@@ -128,24 +196,31 @@
   height: calc(100% - 4px);
   background:
     linear-gradient(0deg, rgb(59 42 22 / 15%), transparent 25% 75%, rgb(255 255 255 / 16%)),
-    repeating-linear-gradient(90deg, #c5bba5 0 .6px, #f1ead8 1px 2px, #ded4be 2.4px 3px);
+    repeating-linear-gradient(90deg, #c5bba5 0 0.6px, #f1ead8 1px 2px, #ded4be 2.4px 3px);
   box-shadow: inset 0 0 5px rgb(80 60 35 / 18%);
   transform-origin: left center;
   transform: translateZ(calc(var(--half-depth) - 2px)) rotateY(90deg);
 }
 
-.pagesTop, .pagesBottom {
+.pagesTop,
+.pagesBottom {
   left: 2px;
   width: calc(100% - 4px);
   height: var(--paper-depth);
   background:
     linear-gradient(90deg, rgb(51 34 15 / 28%), transparent 12% 90%, rgb(51 34 15 / 10%)),
-    repeating-linear-gradient(0deg, #c5bba5 0 .6px, #f1ead8 1px 2px, #ded4be 2.4px 3px);
+    repeating-linear-gradient(0deg, #c5bba5 0 0.6px, #f1ead8 1px 2px, #ded4be 2.4px 3px);
   transform-origin: center top;
 }
 
-.pagesTop { top: 2px; transform: translateZ(calc(-1 * var(--half-depth) + 2px)) rotateX(90deg); }
-.pagesBottom { top: calc(100% - 2px); transform: translateZ(calc(var(--half-depth) - 2px)) rotateX(-90deg); }
+.pagesTop {
+  top: 2px;
+  transform: translateZ(calc(-1 * var(--half-depth) + 2px)) rotateX(90deg);
+}
+.pagesBottom {
+  top: calc(100% - 2px);
+  transform: translateZ(calc(var(--half-depth) - 2px)) rotateX(-90deg);
+}
 
 .expand {
   position: absolute;
@@ -155,16 +230,19 @@
   place-items: center;
   width: 32px;
   height: 32px;
-  border: 1px solid rgb(181 160 106 / 60%);
+  border: 1px solid rgb(var(--gold-rgb) / 60%);
   border-radius: 50%;
   background: rgb(11 16 14 / 80%);
   color: var(--ivory);
   pointer-events: none;
   opacity: 0;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
 }
 
-.trigger:hover .expand, .trigger:focus-visible .expand { opacity: 1; }
+.trigger:hover .expand,
+.trigger:focus-visible .expand {
+  opacity: 1;
+}
 
 .dialog {
   position: fixed;
@@ -182,16 +260,33 @@
   color: var(--ivory);
 }
 
-.dialog[open] { display: grid; place-items: center; }
-.dialog::backdrop { background: rgb(3 8 12 / 88%); backdrop-filter: blur(12px); animation: dim .35s ease both; }
-.dialog[data-closing="true"]::backdrop { animation: undim .42s ease both; }
-.dialog[data-closing="true"] .caption { animation: none; opacity: 0; transition: opacity .15s ease; }
-
-.preview {
-  width: min(440px, calc((100dvh - 220px) * .64), 100%);
+.dialog[open] {
+  display: grid;
+  place-items: center;
+}
+.dialog::backdrop {
+  background: rgb(3 8 12 / 88%);
+  backdrop-filter: blur(12px);
+  animation: dim 0.35s ease both;
+}
+.dialog[data-closing="true"]::backdrop {
+  animation: undim 0.42s ease both;
+}
+.dialog[data-closing="true"] .caption {
+  animation: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
 }
 
-.previewCard { --perspective: 1400px; position: relative; transform-origin: center; }
+.preview {
+  width: min(440px, calc((100dvh - 220px) * 0.64), 100%);
+}
+
+.previewCard {
+  --perspective: 1400px;
+  position: relative;
+  transform-origin: center;
+}
 
 .caption {
   margin-top: 40px;
@@ -200,7 +295,7 @@
   font-size: 24px;
   line-height: 1.2;
   color: var(--gold);
-  animation: dim .35s .65s ease both;
+  animation: dim 0.35s 0.65s ease both;
 }
 
 .close {
@@ -213,19 +308,48 @@
   width: 44px;
   height: 44px;
   padding: 0;
-  border: 1px solid rgb(181 160 106 / 55%);
+  border: 1px solid rgb(var(--gold-rgb) / 55%);
   border-radius: 50%;
   background: var(--ink);
   color: var(--ivory);
   cursor: pointer;
 }
 
-.close:hover { color: var(--gold); background: var(--forest); }
-@keyframes dim { from { opacity: 0; } to { opacity: 1; } }
-@keyframes undim { from { opacity: 1; } to { opacity: 0; } }
-@media (hover: none) { .expand { opacity: 1; } }
+.close:hover {
+  color: var(--gold);
+  background: var(--forest);
+}
+@keyframes dim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes undim {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@media (hover: none) {
+  .expand {
+    opacity: 1;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
-  .rotator { transform: perspective(var(--perspective, 850px)) rotateY(18deg) rotateX(-10deg); }
-  .caption, .dialog::backdrop, .dialog[data-closing="true"]::backdrop { animation: none; }
-  .expand { transition: none; }
+  .rotator {
+    transform: perspective(var(--perspective, 850px)) rotateY(18deg) rotateX(-10deg);
+  }
+  .caption,
+  .dialog::backdrop,
+  .dialog[data-closing="true"]::backdrop {
+    animation: none;
+  }
+  .expand {
+    transition: none;
+  }
 }
