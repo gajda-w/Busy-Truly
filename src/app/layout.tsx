@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import type { ReactNode } from "react";
+import { siteIdentity } from "@/config/site";
 import "./globals.css";
 
 const garamond = localFont({
@@ -26,12 +28,12 @@ const cormorant = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "K.T. Writz — Official Author Website",
+  title: `${siteIdentity.name} — Official Author Website`,
   description:
     "Enter the worlds of K.T. Writz. Discover Skradzione Szepty, Królowa Wiedźm, and notes from behind the pages.",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en" className={`${garamond.variable} ${alegreya.variable} ${cormorant.variable}`}>
       <body>{children}</body>

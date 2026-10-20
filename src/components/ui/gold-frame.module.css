@@ -1,0 +1,70 @@
+.frame {
+  position: relative;
+  isolation: isolate;
+  flex-shrink: 0;
+  width: 298px;
+  max-width: 100%;
+  padding: 8px;
+  border: 1px solid rgb(var(--gold-rgb) / 55%);
+  background: linear-gradient(
+    135deg,
+    rgb(var(--gold-rgb) / 6%),
+    rgb(var(--gold-rgb) / 1%) 55%,
+    rgb(var(--gold-rgb) / 4%)
+  );
+  box-shadow: 0 8px 24px rgb(0 0 0 / 16%);
+}
+.frame::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgb(var(--gold-rgb) / 28%);
+  pointer-events: none;
+}
+.ornaments {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  color: var(--gold);
+  opacity: 0.75;
+  pointer-events: none;
+}
+.corner {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  stroke-width: 0.85;
+}
+.top-left {
+  top: -3px;
+  left: -3px;
+}
+.top-right {
+  top: -3px;
+  right: -3px;
+  transform: rotate(90deg);
+}
+.bottom-left {
+  bottom: -3px;
+  left: -3px;
+  transform: rotate(-90deg);
+}
+.bottom-right {
+  bottom: -3px;
+  right: -3px;
+  transform: rotate(180deg);
+}
+.crest {
+  position: absolute;
+  left: 50%;
+  width: 56px;
+  height: 17px;
+  transform: translateX(-50%);
+}
+.top {
+  top: -6px;
+}
+.bottom {
+  bottom: -6px;
+  transform: translateX(-50%) rotate(180deg);
+}
