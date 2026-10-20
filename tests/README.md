@@ -43,6 +43,8 @@ committing replacements. A failing screenshot is evidence to investigate, not a
 reason to update snapshots automatically. Keep historical Framer reference files
 separate from these current application baselines.
 
+Each run also writes an HTML report to `playwright-report/`. Open the latest report
+with `npm run test:e2e:report` to inspect results and visual differences.
 On failure, Playwright writes screenshots and traces to `test-results/`. Open a
-trace with `npx playwright show-trace path/to/trace.zip`; these artifacts are ignored
-by Git and uploaded by CI.
+trace with `npx playwright show-trace path/to/trace.zip`. Both report directories
+are ignored by Git and uploaded by CI when a job fails.

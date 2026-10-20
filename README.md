@@ -33,6 +33,7 @@ npm start
 | `npm run build`           | Produkcyjny build strony                                         |
 | `npm run test:e2e`        | Testy zachowania, dostępności i wyglądu na produkcyjnym buildzie |
 | `npm run test:e2e:update` | Proponowane nowe zrzuty po świadomej zmianie wyglądu             |
+| `npm run test:e2e:report` | Otworzenie raportu HTML z ostatniego przebiegu testów            |
 
 Przed pierwszym uruchomieniem testów wykonaj `npx playwright install chromium firefox webkit`.
 Opis scenariuszy, platformy zrzutów i przeglądania wyników: [tests/README.md](tests/README.md).
