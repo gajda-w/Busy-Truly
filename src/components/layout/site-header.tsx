@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { siteIdentity, siteLinks } from "@/config/site";
 import styles from "./site-header.module.css";
 
@@ -8,12 +9,13 @@ export function SiteHeader() {
         Skip to content
       </a>
       <header className={styles.header} data-reference="ncA3elSyZ">
-        <a className={styles.brand} href="#">
+        <Link className={styles.brand} href="/">
           {siteIdentity.wordmark}
-        </a>
-        <a className={styles.substack} href={siteLinks.substack}>
-          Read on Substack
-        </a>
+        </Link>
+        <nav className={styles.navigation} aria-label="Main navigation">
+          <Link href="/product">Books</Link>
+          <a href={siteLinks.substack}>Read on Substack</a>
+        </nav>
       </header>
     </>
   );

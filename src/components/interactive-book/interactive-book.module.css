@@ -18,6 +18,10 @@
   outline-offset: 12px;
 }
 
+.link {
+  cursor: pointer;
+}
+
 .trigger[aria-expanded="true"] > * {
   visibility: hidden;
 }

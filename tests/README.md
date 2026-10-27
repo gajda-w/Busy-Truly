@@ -14,6 +14,9 @@ WebKit. Tests cover both book previews with pointer, keyboard and mobile touch i
 focus restoration, page scroll locking, modal dismissal and interrupted animation.
 They also check navigation, horizontal overflow at 390, 768 and 1200 pixels, and
 automated WCAG A/AA accessibility rules on the page and inside a preview.
+Product checks cover catalog navigation by keyboard and touch, direct detail URLs,
+cover previews, pointer tilt and reduced motion, missing books, and accessibility
+and horizontal overflow on the catalog and detail pages from 320 to 1200 pixels.
 Automated accessibility checks complement manual keyboard and screen-reader review.
 The WebKit skip-link check uses Option+Tab because Safari's default keyboard
 traversal excludes links from plain Tab. Modal tests allow focus to move to browser
@@ -21,11 +24,12 @@ chrome while checking that background controls remain inert.
 
 ## Visual baselines
 
-`visual.spec.ts-snapshots/` contains the original pre-refactor page and both cover
+`visual.spec.ts-snapshots/` contains the reviewed home page and both cover
 previews at 1200×900 desktop and 390×844 mobile viewports. Screenshots use reduced
 motion, wait for local fonts and images, and retain Playwright's platform suffix.
 The current baselines were captured on macOS with the browser pinned by the
 lockfile. CI compares them on macOS; Linux runs the behavior suite separately.
+The home page baselines include the Books navigation link added with the catalog.
 
 ```sh
 # Behavior and accessibility checks on any supported platform

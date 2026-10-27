@@ -28,6 +28,7 @@ export type Book = {
   readonly motifs: readonly string[];
   readonly decoration: "sparkles" | "moon";
   readonly bindingColor: string;
+  readonly backdrop: "forest" | "midnight";
   readonly artwork: BookArtwork;
   readonly purchaseUrl?: string;
   readonly playlistUrl?: string;
@@ -48,6 +49,7 @@ export const books = [
     ],
     decoration: "sparkles",
     bindingColor: "#182b22",
+    backdrop: "forest",
     artwork: {
       kind: "front",
       src: "/images/skradzione-szepty.jpeg",
@@ -69,6 +71,7 @@ export const books = [
     ],
     decoration: "moon",
     bindingColor: "#102c42",
+    backdrop: "midnight",
     artwork: {
       kind: "wrap",
       src: "/images/krolowa-wiedzm-wrap.jpeg",

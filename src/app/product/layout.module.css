@@ -1,0 +1,18 @@
+.main {
+  width: min(100%, 1200px);
+  min-height: calc(100svh - 200px);
+  margin-inline: auto;
+  padding: 64px 72px 112px;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    padding-inline: 32px;
+  }
+}
+
+@media (max-width: 760px) {
+  .main {
+    padding: 40px 24px 80px;
+  }
+}

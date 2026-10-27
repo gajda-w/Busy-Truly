@@ -13,6 +13,13 @@
   line-height: 1.2;
   letter-spacing: 3px;
 }
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 28px;
+}
 .skipLink {
   position: fixed;
   left: 16px;
@@ -38,7 +45,8 @@
     padding: 22px 24px;
     gap: 18px;
   }
-  .substack {
+  .navigation {
+    gap: 4px 16px;
     font-size: 16px;
   }
   .brand {
